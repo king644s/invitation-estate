@@ -66,6 +66,18 @@
   2. Common Styles 
 ************************************************************/
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .section-title {
   width: 50%;
   margin-left: auto;
@@ -139,7 +151,7 @@
 }
 
 .btn-main {
-  padding: 15px 48px;
+  padding: 10px 40px;
   background: @main-color;
   color: @white;
   border-radius: 5px;
@@ -366,7 +378,7 @@ h6 {
     z-index: 1;
     transition: 0.3s;
     .img-fluid {
-      width: 91px;
+      width: 60px;
     }
 
     &.fixed-top {
@@ -432,6 +444,19 @@ h6 {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  .hero-banner-img-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    overflow: hidden;
+    height: 100%;
+    img{
+      object-position: center;
+      // object-fit: cover;
+      height: 100%;
+    }
+  }
 
   // &:after{
   // 	content: '';
@@ -443,6 +468,17 @@ h6 {
   // 	background: rgba(0, 0, 0, .1);
   // 	z-index: -1;
   // }
+  .form-control{
+    background-color: transparent;
+    color:#000;
+    // border-color: @main-color;
+    &:focus{
+      outline: none;
+      border-color: @main-color;
+      box-shadow: 0 0 0 0.25rem rgba(255,199,0,.25);
+      border-radius: 10px;
+    }
+  }
 
   .hero-content {
     min-height: 100vh;
@@ -451,6 +487,10 @@ h6 {
 
     > .row {
       width: 100%;
+    }
+    .img-fluid{
+      object-fit: cover;
+      aspect-ratio: 1;
     }
   }
 
@@ -579,7 +619,7 @@ h6 {
   }
 
   .glitch-img {
-    background: url(@hero-image) no-repeat center center;
+    // background: url(@hero-image) no-repeat center center;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -595,7 +635,7 @@ h6 {
       right: 0;
       bottom: 0;
       top: 0;
-      background: rgba(0, 0, 0, 0.7);
+      // background: rgba(255, 199, 0, 0.7);
       z-index: 1;
     }
   }
@@ -692,24 +732,35 @@ h6 {
       height: 60px;
       border-radius: 7px;
       border: 5px solid @main-color;
-      left: 30px;
-      top: 190px;
+      top: 100px;
     }
 
     &:after {
       width: 36px;
       height: 36px;
       background: @main-color;
-      left: 332px;
-      bottom: -90px;
+      // left: 0px;
+      bottom: 90px;
       border-radius: 4px;
     }
   }
 
+  .about-img-1 {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    aspect-ratio: 1;
+    width: 350px;
+  }
   .about-img-2 {
-    position: absolute;
-    left: 0;
-    bottom: -200px;
+    position: relative;
+    left: -200px;
+    bottom: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    aspect-ratio: 1;
+    width: 300px;
   }
 
   .content-block {
@@ -1313,8 +1364,8 @@ h6 {
 ************************************************************/
 
 .testimonial-section {
-  background-color: @color-bg;
-  background: url("../image/testimonial-bg.jpg") no-repeat center center;
+  background-color: @gray-bg;
+  // background: url("../image/testimonial-bg.jpg") no-repeat center center;
   background-size: cover;
   padding-bottom: 107px;
   position: relative;
@@ -1327,7 +1378,7 @@ h6 {
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.2);
+    // background: rgba(0, 0, 0, 0.2);
     z-index: -1;
   }
 
@@ -1803,10 +1854,40 @@ h6 {
 /***********************************************************
   15. Contact Section
 ************************************************************/
+.contact-form{
+  &:before{
+    content: " ";
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 
+}
 .contact-section {
   padding-bottom: 60px;
   position: relative;
+  .contact-bg{
+    background-image: url(@hero-image);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  .section-title{
+    margin: 20px auto;
+    h2{
+      margin-bottom: 0px;
+      color: #fff;
+    }
+  }
 
   .icon-box {
     width: 60px;
@@ -1818,6 +1899,7 @@ h6 {
     color: @white;
     margin-right: 24px;
     font-size: 24px;
+    aspect-ratio: 1;
   }
 
   a {
@@ -1839,6 +1921,7 @@ h6 {
     font-size: 36px;
     margin-bottom: 48px;
     font-weight: 600;
+    color: #fff;
   }
 
   .map-wrapper {

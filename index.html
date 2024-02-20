@@ -19,9 +19,9 @@
 
     <!-- Icons -->
     <link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/pe-helper.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/pe-helper.css" />
     <link rel="stylesheet" href="css/bootstrap-icons.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/all.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,9 +33,9 @@
 
     <!-- CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css" /> -->
-    <!-- <link rel="stylesheet" href="css/leaflet.css" /> -->
-    <!-- <link rel="stylesheet" href="css/aos.css" /> -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <title>Invitation Estate</title>
@@ -52,10 +52,10 @@
 
     <!-- SITE HEADER -->
     <header class="site-header" id="site-header">
-      <nav class="navbar navbar-expand-xl" id="site-navbar">
+      <nav class="navbar navbar-expand-xl fixed-top" id="site-navbar">
         <div class="container d-flex align-items-center justify-content-center">
           <div
-            class="flex-grow-1 d-flex align-items-center justify-content-start justify-content-md-center"
+            class="d-flex align-items-center justify-content-start justify-content-md-center"
           >
             <a href="#"
               ><img
@@ -64,25 +64,35 @@
                 alt="Investment Estate logo"
             /></a>
           </div>
-          <a href="#contact-section" class="get-in-touch">
+          <!-- <a href="#contact-section" class="get-in-touch">
             <i class="pe-7s-call"></i>
             GET IN TOUCH
-          </a>
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
-		    </button> -->
-          <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		      <ul class="navbar-nav ms-auto mb-lg-0">
-		        <li class="nav-item">
+          </a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+              <!-- <li class="nav-item">
 		          <a class="nav-link active" aria-current="page" href="#site-header">Home</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#about-section">About</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#portfolio-section">Portfolio</a>
-		        </li>
-		        <li class="nav-item">
+		        </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#about-section">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio-section"
+                  >Solaris Project</a
+                >
+              </li>
+              <!-- <li class="nav-item">
 		          <a class="nav-link" href="#service-section">Service</a>
 		        </li>
 		        <li class="nav-item">
@@ -90,12 +100,12 @@
 		        </li>
 		        <li class="nav-item">
 		          <a class="nav-link" href="#blog-section">Blog</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#contact-section">Contact</a>
-		        </li>
-		      </ul>
-		    </div>  -->
+		        </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- .container -->
       </nav>
@@ -108,8 +118,8 @@
       <div class="container">
         <div class="hero-content d-flex justify-content-center">
           <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-xl-10 text-center content-block">
-              <h1 class="hero-head">
+            <div class="col-6 text-center content-block">
+              <!-- <h1 class="hero-head">
                 Crafting elegance <strong>beyond expectations!</strong>
               </h1>
               <p>
@@ -119,18 +129,139 @@
                 symbol of aspirational luxury and modern living that sets the
                 stage for a truly extraordinary living experience leading to a
                 new dawn of luxury.
-              </p>
-              <div
+              </p> -->
+              <!-- <div
                 class="link-group d-flex align-items-center justify-content-center flex-column flex-sm-row gap-sm-3"
               >
                 <a class="btn-main" href="#portfolio-section">PROJECT IMAGES</a>
-                <a class="btn-ghost"  href="assets/Solaris Brochure_A3_2ndJan_2024.pdf" download >DOWNLOAD BROCHURE</a>
-              </div>
+                <a
+                  class="btn-ghost"
+                  href="assets/Solaris Brochure_A3_2ndJan_2024.pdf"
+                  download
+                  >DOWNLOAD BROCHURE</a
+                >
+              </div> -->
+            </div>
+            <div class="col-6">
+              <h1 class="hero-head">
+                <strong>Crafting elegance beyond expectations!</strong>
+              </h1>
+              <form
+                class="row g-3"
+                id="invitation-contact"
+                method="POST"
+                action="php/form-handler.php"
+              >
+                <div class="col-md-6">
+                  <div class="input-group mb-3">
+                    <label for="inputName" class="form-label visually-hidden"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputName"
+                      placeholder="Name*"
+                      name="inputName"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group mb-3">
+                    <label
+                      for="inputContactNumber"
+                      class="form-label visually-hidden"
+                      >Contact No</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputContactNumber"
+                      name="inputContactNumber"
+                      placeholder="Contact No*"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="input-group mb-3">
+                    <label for="inputEmail" class="form-label visually-hidden"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmail"
+                      name="inputEmail"
+                      placeholder="Email*"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group mb-3">
+                    <label for="inputCity" class="form-label visually-hidden"
+                      >City</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputCity"
+                      placeholder="City*"
+                      name="inputCity"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="input-group mb-3">
+                    <label for="inputProject" class="form-label visually-hidden"
+                      >Project</label
+                    >
+                    <select
+                      class="form-control"
+                      id="inputProject"
+                      name="inputProject"
+                      placeholder="Project*"
+                      required
+                    >
+                      <option value="" hidden>Project</option>
+                      <option value="Solaris">Solaris</option>
+                      <option>Project 1</option>
+                      <option>Project 2</option>
+                      <option>Project 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="inputMessage" class="form-label visually-hidden"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control mb-3"
+                    id="inputMessage"
+                    name="inputMessage"
+                    placeholder="Your message here*"
+                    required
+                    rows="4"
+                  ></textarea>
+                  <button type="submit" class="btn btn-main" name="submit">
+                    Send Message
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
           <!-- .row -->
         </div>
         <!-- .hero-content -->
+      </div>
+      <div class="hero-banner-img-bg">
+        <img
+          src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1694002299/invitation-estate/hero-banner.jpg"
+        />
       </div>
       <!-- .container -->
 
@@ -149,16 +280,16 @@
     <!-- .hero-area -->
 
     <!-- INTRO SECTION -->
-    <!-- <section class="intro-section section-block">
+    <section class="intro-section section-block">
       <div class="container">
         <div class="section-title">
-          <h2>Welcome to my World</h2>
+          <h2>Crafting elegance beyond expectations!</h2>
           <p class="lead">
-            I'm a young tech enthasist and ethical hacker who love to take risk.
-            I grew up in a tech family in New York City.
+            Our vision is to create a harmonious blend of sophistication,
+            sustainability, and breathtaking natural beauty.
           </p>
         </div>
-      
+
         <div class="row">
           <div class="col-xl-4 col-lg-6" data-aos="fade-up">
             <div class="item-wrapper">
@@ -170,9 +301,7 @@
                   pari erunt mollit anim id est laborum.
                 </p>
               </div>
-             
             </div>
-           
           </div>
           <div
             class="col-xl-4 col-lg-6"
@@ -189,9 +318,7 @@
                   fugiat nulla pariatur.
                 </p>
               </div>
-            
             </div>
-         
           </div>
           <div
             class="col-xl-4 col-lg-6"
@@ -208,29 +335,24 @@
                   qui offi llit anim id est laborum.
                 </p>
               </div>
-             
             </div>
-         
           </div>
         </div>
-    
       </div>
-     
 
       <div class="design-elements">
-        <img
+        <!-- <img
           class="de-intro-1 elem-updown"
           src="image/design-elements/intro-element-1.png"
           alt="intro element 1"
-        />
+        /> -->
       </div>
-    
-    </section> -->
+    </section>
     <!-- .intro-section -->
 
     <!-- ABOUT SECTION -->
-    <!-- <section
-      class="about-section section-block"
+    <section
+      class="about-section section-block pt-5 pb-0"
       id="about-section"
       data-aos="fade-up"
     >
@@ -249,12 +371,12 @@
             >
               <img
                 class="about-img-1 img-fluid"
-                src="image/about-image-1.png"
+                src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1695989804/invitation-estate/nviitrwygoonhhq6xwca.jpg"
                 alt="about image"
               />
               <img
                 class="about-img-2 img-fluid"
-                src="image/about-image-2.png"
+                src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1695989805/invitation-estate/jtuub8yefpx9yozzraka.jpg"
                 alt="about image 2"
               />
             </div>
@@ -265,21 +387,25 @@
             data-aos-delay="400"
             data-aos-duration="2000"
           >
-            <h2>
-              <span>About Me</span>I develop secure system no one can break!
-            </h2>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
-            </p>
-            <p>
-              Tabore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
-            </p>
-            <div class="personal-details row">
+            <div
+              class="d-flex flex-column align-items-start justify-content-center h-100"
+            >
+              <h2>
+                <span>About Me</span>Crafting elegance beyond expectations!
+              </h2>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+              <p>
+                Tabore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+            </div>
+            <!-- <div class="personal-details row">
               <div class="col-md-6">
                 <ul class="personal-info">
                   <li>
@@ -318,13 +444,12 @@
            
             </div>
            
-            <a class="btn-main" href="#">Download CV</a>
+            <a class="btn-main" href="#">Download CV</a> -->
           </div>
         </div>
-      
       </div>
-      
-      <div class="design-elements">
+
+      <!-- <div class="design-elements">
         <img
           class="de-about-1 elem-updown"
           src="image/design-elements/about-element-1.png"
@@ -335,9 +460,8 @@
           src="image/design-elements/about-element-2.png"
           alt="about element 2"
         />
-      </div>
-   
-    </section> -->
+      </div> -->
+    </section>
 
     <!-- SKILL SECTION -->
     <!-- <section class="skill-section section-block" id="skill-section">
@@ -790,374 +914,6 @@
               </div> -->
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 grid-item design application">
-            <div class="box">
-              <img
-                src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1695989805/invitation-estate/wxucwr4meqvyyitetqhe.jpg"
-                alt="portfolio image"
-              />
-              <!-- <div class="box-content">
-                <span class="category">Application</span>
-                <h3 class="title">She's got a smile that seems to me</h3>
-              </div>
-              <div class="icon-box">
-                <a
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#portfolioModal3"
-                  ><i class="bi bi-plus-lg"></i
-                ></a>
-              </div> -->
-
-              <!-- <div
-                class="modal fade"
-                id="portfolioModal3"
-                tabindex="-1"
-                aria-labelledby="portfolioModal3"
-                aria-hidden="true"
-              >
-                <div
-                  class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl"
-                >
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <i class="bi bi-x"></i>
-                      </button>
-                      <div class="row item-content">
-                        <div class="col-xl-12">
-                          <img
-                            src="image/portfolio/portfolio_large_4.jpg"
-                            alt="portfolio image"
-                          />
-                        </div>
-                        <div class="col-xl-8">
-                          <div class="content-wrapper">
-                            <h2 class="item-title">
-                              Branding for ABC Corporation
-                            </h2>
-                            <p>
-                              Duis aute irure dolor in reprehenderit in
-                              voluptate velit esse cillum dolore eu fugiat nulla
-                              pariatur. Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit, sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua. Ut enim ad minim
-                              veniam, quis nostrud exercitation ullamco laboris
-                              nisi ut aliquip ex ea commodo consequat. Excepteur
-                              sint occaecat cupidatat non proident, sunt in
-                              culpa qui officia deserunt mollit anim id est
-                              laborum.
-                            </p>
-                            <p>
-                              Duis aute irure dolor in reprehenderit in
-                              voluptate velit esse cillum dolore eu fugiat nulla
-                              pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt
-                              mollit anim id est laborum.
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-xl-4">
-                          <div class="meta-wrapper">
-                            <ul class="item-meta">
-                              <li>
-                                Project Type:
-                                <span class="meta-value">Graphic Design</span>
-                              </li>
-                              <li>
-                                Client:
-                                <span class="meta-value">Juwel Khan</span>
-                              </li>
-                              <li>
-                                Duration:
-                                <span class="meta-value">2 Weeks</span>
-                              </li>
-                              <li>
-                                Task:
-                                <span class="meta-value">UI/UX, Frontend</span>
-                              </li>
-                              <li>
-                                Budget: <span class="meta-value">$2000</span>
-                              </li>
-                            </ul>
-                          </div>
-                         
-                        </div>
-                      </div>
-                     
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 grid-item programming design">
-            <div class="box">
-              <img
-                src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1695989805/invitation-estate/ggkkogflhpkag8i5zspr.jpg"
-                alt="portfolio image"
-              />
-              <!-- <div class="box-content">
-                <span class="category">Programming</span>
-                <h3 class="title">So close no matter how far</h3>
-              </div>
-              <div class="icon-box">
-                <a
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#portfolioModal2"
-                  ><i class="bi bi-plus-lg"></i
-                ></a>
-              </div> -->
-
-              <!-- <div
-                class="modal fade"
-                id="portfolioModal2"
-                tabindex="-1"
-                aria-labelledby="portfolioModal2"
-                aria-hidden="true"
-              >
-                <div
-                  class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl"
-                >
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <i class="bi bi-x"></i>
-                      </button>
-                      <div class="row item-content">
-                        <div class="col-xl-12">
-                          <img
-                            src="image/portfolio/portfolio_large_5.jpg"
-                            alt="portfolio image"
-                          />
-                        </div>
-                        <div class="col-xl-8">
-                          <div class="content-wrapper">
-                            <h2 class="item-title">
-                              Branding for ABC Corporation
-                            </h2>
-                            <p>
-                              Duis aute irure dolor in reprehenderit in
-                              voluptate velit esse cillum dolore eu fugiat nulla
-                              pariatur. Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit, sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua. Ut enim ad minim
-                              veniam, quis nostrud exercitation ullamco laboris
-                              nisi ut aliquip ex ea commodo consequat. Excepteur
-                              sint occaecat cupidatat non proident, sunt in
-                              culpa qui officia deserunt mollit anim id est
-                              laborum.
-                            </p>
-                            <p>
-                              Duis aute irure dolor in reprehenderit in
-                              voluptate velit esse cillum dolore eu fugiat nulla
-                              pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt
-                              mollit anim id est laborum.
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-xl-4">
-                          <div class="meta-wrapper">
-                            <ul class="item-meta">
-                              <li>
-                                Project Type:
-                                <span class="meta-value">Graphic Design</span>
-                              </li>
-                              <li>
-                                Client:
-                                <span class="meta-value">Juwel Khan</span>
-                              </li>
-                              <li>
-                                Duration:
-                                <span class="meta-value">2 Weeks</span>
-                              </li>
-                              <li>
-                                Task:
-                                <span class="meta-value">UI/UX, Frontend</span>
-                              </li>
-                              <li>
-                                Budget: <span class="meta-value">$2000</span>
-                              </li>
-                            </ul>
-                          </div>
-                         
-                        </div>
-                      </div>
-                    
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 grid-item programming">
-            <div class="box">
-              <img
-                src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1695989806/invitation-estate/jaayfqvny7owsqumtny0.jpg"
-                alt="portfolio image"
-              />
-              <!-- <div class="box-content">
-                <span class="category">Programming</span>
-                <h3 class="title">Website design for Rainy Design</h3>
-              </div>
-              <div class="icon-box">
-                <a
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#portfolioModal6"
-                  ><i class="bi bi-plus-lg"></i
-                ></a>
-              </div> -->
-
-              <!-- <div
-                class="modal fade"
-                id="portfolioModal6"
-                tabindex="-1"
-                aria-labelledby="portfolioModal6"
-                aria-hidden="true"
-              >
-                <div
-                  class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl"
-                >
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <i class="bi bi-x"></i>
-                      </button>
-                      <div class="row item-content">
-                        <div class="col-xl-12">
-                          <img
-                            src="image/portfolio/portfolio_large_1.jpg"
-                            alt="portfolio image"
-                          />
-                        </div>
-                        <div class="col-xl-8">
-                          <div class="content-wrapper">
-                            <h2 class="item-title">
-                              Branding for ABC Corporation
-                            </h2>
-                            <p>
-                              Duis aute irure dolor in reprehenderit in
-                              voluptate velit esse cillum dolore eu fugiat nulla
-                              pariatur. Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit, sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua. Ut enim ad minim
-                              veniam, quis nostrud exercitation ullamco laboris
-                              nisi ut aliquip ex ea commodo consequat. Excepteur
-                              sint occaecat cupidatat non proident, sunt in
-                              culpa qui officia deserunt mollit anim id est
-                              laborum.
-                            </p>
-                            <p>
-                              Duis aute irure dolor in reprehenderit in
-                              voluptate velit esse cillum dolore eu fugiat nulla
-                              pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt
-                              mollit anim id est laborum.
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-xl-4">
-                          <div class="meta-wrapper">
-                            <ul class="item-meta">
-                              <li>
-                                Project Type:
-                                <span class="meta-value">Graphic Design</span>
-                              </li>
-                              <li>
-                                Client:
-                                <span class="meta-value">Juwel Khan</span>
-                              </li>
-                              <li>
-                                Duration:
-                                <span class="meta-value">2 Weeks</span>
-                              </li>
-                              <li>
-                                Task:
-                                <span class="meta-value">UI/UX, Frontend</span>
-                              </li>
-                              <li>
-                                Budget: <span class="meta-value">$2000</span>
-                              </li>
-                            </ul>
-                          </div>
-                         
-                        </div>
-                      </div>
-                     
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 grid-item programming design">
-            <div class="box">
-              <img
-                src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1695989805/invitation-estate/ji8huvn4q7fqcu9rekyd.jpg"
-                alt="portfolio image"
-              />
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 grid-item programming design">
-            <div class="box">
-              <img
-                src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1695989804/invitation-estate/r3vco16crabcbmq9udcn.jpg"
-                alt="portfolio image"
-              />
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 grid-item programming design">
-            <div class="box">
-              <img
-                src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1695989805/invitation-estate/dshb0wxamsjyqg7zehbp.jpg"
-                alt="portfolio image"
-              />
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 grid-item programming design">
-            <div class="box">
-              <img
-                src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1695989804/invitation-estate/ttmfwbiexfhzrl7t8emy.jpg"
-                alt="portfolio image"
-              />
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 grid-item programming design">
-            <div class="box">
-              <img
-                src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1695989804/invitation-estate/dwi7lnqwhmosetotigxx.jpg"
-                alt="portfolio image"
-              />
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 grid-item programming design">
-            <div class="box">
-              <img
-                src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1695989804/invitation-estate/emembsqzybnhsvggdv0a.jpg"
-                alt="portfolio image"
-              />
-            </div>
-          </div>
         </div>
       </div>
       <!-- .container -->
@@ -1404,9 +1160,9 @@
     <!-- .features-section -->
 
     <!-- TESTIMONIAL SECTION -->
-    <!-- <section class="testimonial-section section-block" id="testimonial-section">
+    <section class="testimonial-section section-block" id="testimonial-section">
       <div class="container">
-        <div class="section-title dark">
+        <div class="section-title">
           <h2>Testimonials</h2>
           <p class="lead">
             Duis aute irure dolor in reprehen pteur sint occaecat cupidatat non
@@ -1527,7 +1283,7 @@
       
       </div>
   
-    </section> -->
+    </section>
     <!-- .testimonial-section -->
 
     <!-- BLOG SECTION -->
@@ -2550,8 +2306,10 @@
     </section> -->
     <!-- .partner section -->
 
-    <!-- CONTACT SECTION -->
-    <section class="contact-section section-block" id="contact-section">
+    <section
+      class="contact-section contact-form section-block pt-5"
+      id="contact-section"
+    >
       <div class="container">
         <div class="section-title">
           <h2>Get in Touch</h2>
@@ -2561,51 +2319,6 @@
           </p> -->
         </div>
         <!-- .section-title -->
-
-        <div class="row contact-options">
-          <div
-            class="col-lg-4 d-flex justify-content-xxl-center align-items-xl-center"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-          >
-            <div class="icon-box"><i class="pe-7s-map-marker"></i></div>
-            <div class="content-wrapper">
-              <h4>Address</h4>
-              <address>
-                Invitation Estates, Third Floor, Plot No 23, Sy. No 136,
-                Gachibowli, Hyderabad - 500032
-              </address>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 d-flex justify-content-xxl-center align-items-xl-center"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            <div class="icon-box"><i class="pe-7s-call"></i></div>
-            <div class="content-wrapper">
-              <h4>Phone</h4>
-              <a href="tel:+919885511435">+91 988 551 1435</a>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 d-flex justify-content-xxl-center align-items-xl-center"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            data-aos-delay="400"
-          >
-            <div class="icon-box"><i class="pe-7s-mail"></i></div>
-            <div class="content-wrapper">
-              <h4>Email</h4>
-              <a href="mailto:info@invitationestates.com"
-                >info@invitationestates.com</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- .row -->
-
         <div class="row">
           <div
             class="col-lg-6"
@@ -2648,6 +2361,23 @@
               </div>
               <div class="col-md-6">
                 <div class="input-group mb-3">
+                  <label
+                    for="inputContactNumber"
+                    class="form-label visually-hidden"
+                    >Contact No</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="inputContactNumber"
+                    name="inputContactNumber"
+                    placeholder="Contact No*"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group mb-3">
                   <label for="inputEmail" class="form-label visually-hidden"
                     >Email</label
                   >
@@ -2659,6 +2389,42 @@
                     placeholder="Email*"
                     required
                   />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group mb-3">
+                  <label for="inputCity" class="form-label visually-hidden"
+                    >City</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCity"
+                    name="inputCity"
+                    placeholder="City*"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="input-group mb-3">
+                  <label for="inputProject" class="form-label visually-hidden"
+                    >Project</label
+                  >
+
+                  <select
+                    class="form-control"
+                    id="inputProject"
+                    name="inputProject"
+                    placeholder="Project*"
+                    required
+                  >
+                    <option value="" hidden>Project</option>
+                    <option value="Solaris">Solaris</option>
+                    <option>Project 1</option>
+                    <option>Project 2</option>
+                    <option>Project 3</option>
+                  </select>
                 </div>
               </div>
               <div class="col-md-12">
@@ -2679,6 +2445,59 @@
             </form>
           </div>
         </div>
+      </div>
+      <div class="contact-bg"></div>
+      <!-- .container -->
+      <!-- <div class="design-elements">
+        <img
+          class="de-contact-1 elem-updown"
+          src="image/design-elements/contact-element-1.png"
+          alt="contact element 1"
+        />
+        <img
+          class="de-contact-2 elem-updown"
+          src="image/design-elements/contact-element-2.png"
+          alt="contact element 2"
+        />
+      </div> -->
+      <!-- .design-elements -->
+    </section>
+    <!-- CONTACT SECTION -->
+    <section class="contact-section section-block" id="contact-section">
+      <div class="container">
+        <!-- .section-title -->
+
+        <div class="row contact-options">
+          <div
+            class="col-lg-6 d-flex justify-content-xxl-center align-items-xl-center"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div class="icon-box"><i class="pe-7s-clock"></i></div>
+            <div class="content-wrapper">
+              <h4>Office Hours</h4>
+              <p>Monday to Saturday</p>
+              <p>9 a.m. to 5 p.m.</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 d-flex justify-content-xxl-center align-items-xl-center"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <div class="icon-box"><i class="pe-7s-map-marker"></i></div>
+            <div class="content-wrapper">
+              <h4>Address</h4>
+              <address>
+                Invitation Estates, Third Floor, Plot No 23, Sy. No 136,
+                Gachibowli, Hyderabad - 500032
+              </address>
+              <a href="tel:+919885511435">+91 988 551 1435</a>
+            </div>
+          </div>
+        </div>
+        <!-- .row -->
       </div>
       <!-- .container -->
       <!-- <div class="design-elements">
@@ -2707,10 +2526,11 @@
                 src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1693995302/invitation-estate/logo-3x.png"
                 alt="Invitation Estate logo"
             /></a>
-            <h2 class="hero-head" style="margin-bottom:0px; color:#FFF" >
-              Embark on a luxurious journey Of</h2>
+            <h2 class="hero-head" style="margin-bottom: 0px; color: #fff">
+              Embark on a luxurious journey Of
+            </h2>
 
-            <h2 class="hero-head" style="color:#ffc700" >
+            <h2 class="hero-head" style="color: #ffc700">
               <strong>Opulence and Elegance</strong>
             </h2>
             <!-- <ul class="list-inline footer-social">
@@ -2764,15 +2584,15 @@
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- <script src="js/imagesloaded.pkgd.min.js"></script> -->
-    <!-- <script src="js/isotope.pkgd.min.js"></script> -->
-    <!-- <script src="js/swiper-bundle.min.js"></script> -->
-    <!-- <script src="js/leaflet.js"></script> -->
-    <!-- <script src="js/jquery.waypoints.min.js"></script> -->
-    <!-- <script src="js/jquery.counterup.min.js"></script> -->
-    <!-- <script src="js/aos.js"></script> -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/jquery.preloadinator.min.js"></script>
-    <!-- <script src="js/vanilla-tilt.min.js"></script> -->
+    <script src="js/vanilla-tilt.min.js"></script>
     <!-- <script src="js/mgGlitch.min.js"></script> -->
     <script src="js/script.js"></script>
   </body>

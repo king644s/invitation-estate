@@ -41,6 +41,16 @@
 /***********************************************************
   2. Common Styles 
 ************************************************************/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .section-title {
   width: 50%;
   margin-left: auto;
@@ -80,7 +90,7 @@
   color: #b0aac0;
 }
 .btn-main {
-  padding: 15px 48px;
+  padding: 10px 40px;
   background: #ffc700;
   color: #fff;
   border-radius: 5px;
@@ -268,7 +278,7 @@ h6 {
   transition: 0.3s;
 }
 .site-header .navbar .img-fluid {
-  width: 91px;
+  width: 60px;
 }
 .site-header .navbar.fixed-top {
   padding-top: 12px;
@@ -322,6 +332,28 @@ h6 {
   overflow: hidden;
   /* Hero lines */
 }
+.hero-area .hero-banner-img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  overflow: hidden;
+  height: 100%;
+}
+.hero-area .hero-banner-img-bg img {
+  object-position: center;
+  height: 100%;
+}
+.hero-area .form-control {
+  background-color: transparent;
+  color: #000;
+}
+.hero-area .form-control:focus {
+  outline: none;
+  border-color: #ffc700;
+  box-shadow: 0 0 0 0.25rem rgba(255, 199, 0, 0.25);
+  border-radius: 10px;
+}
 .hero-area .hero-content {
   min-height: 100vh;
   position: relative;
@@ -329,6 +361,10 @@ h6 {
 }
 .hero-area .hero-content > .row {
   width: 100%;
+}
+.hero-area .hero-content .img-fluid {
+  object-fit: cover;
+  aspect-ratio: 1;
 }
 .hero-area .hero-head {
   color: #fff;
@@ -421,7 +457,6 @@ h6 {
   }
 }
 .hero-area .glitch-img {
-  background: url("https://res.cloudinary.com/threemindsdigitial/image/upload/v1694002299/invitation-estate/hero-banner.jpg") no-repeat center center;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -437,7 +472,6 @@ h6 {
   right: 0;
   bottom: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 /***********************************************************
@@ -513,21 +547,31 @@ h6 {
   height: 60px;
   border-radius: 7px;
   border: 5px solid #ffc700;
-  left: 30px;
-  top: 190px;
+  top: 100px;
 }
 .about-section .img-wrapper:after {
   width: 36px;
   height: 36px;
   background: #ffc700;
-  left: 332px;
-  bottom: -90px;
+  bottom: 90px;
   border-radius: 4px;
 }
+.about-section .about-img-1 {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  aspect-ratio: 1;
+  width: 350px;
+}
 .about-section .about-img-2 {
-  position: absolute;
-  left: 0;
-  bottom: -200px;
+  position: relative;
+  left: -200px;
+  bottom: 100px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  aspect-ratio: 1;
+  width: 300px;
 }
 .about-section .content-block h2 {
   font-size: 48px;
@@ -991,8 +1035,7 @@ h6 {
   12. Testimonial Section
 ************************************************************/
 .testimonial-section {
-  background-color: #333;
-  background: url("../image/testimonial-bg.jpg") no-repeat center center;
+  background-color: #f2f5fb;
   background-size: cover;
   padding-bottom: 107px;
   position: relative;
@@ -1005,7 +1048,6 @@ h6 {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.2);
   z-index: -1;
 }
 .testimonial-section .item-wrapper {
@@ -1356,14 +1398,42 @@ h6 {
 /***********************************************************
   15. Contact Section
 ************************************************************/
+.contact-form:before {
+  content: " ";
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .contact-section {
   padding-bottom: 60px;
   position: relative;
   /* contact form message */
 }
+.contact-section .contact-bg {
+  background-image: url("https://res.cloudinary.com/threemindsdigitial/image/upload/v1694002299/invitation-estate/hero-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.contact-section .section-title {
+  margin: 20px auto;
+}
+.contact-section .section-title h2 {
+  margin-bottom: 0px;
+  color: #fff;
+}
 .contact-section .icon-box {
-  width: 60px   !important;
-  height: 60px !important;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: #ffc700;
   line-height: 60px;
@@ -1371,8 +1441,7 @@ h6 {
   color: #fff;
   margin-right: 24px;
   font-size: 24px;
-  min-width: 60px  !important;
-  min-height: 60px !important;
+  aspect-ratio: 1;
 }
 .contact-section a {
   font-family: "Poppins", sans-serif;
@@ -1390,6 +1459,7 @@ h6 {
   font-size: 36px;
   margin-bottom: 48px;
   font-weight: 600;
+  color: #fff;
 }
 .contact-section .map-wrapper {
   min-height: 396px;
