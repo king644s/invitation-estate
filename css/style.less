@@ -371,7 +371,14 @@ h6 {
   position: absolute;
   width: 100%;
   z-index: 1001;
-
+  nav{
+    background-color: rgba(0, 0, 0, 0.5);
+    .dropdown-menu{
+      a{
+        color: #000;
+      }
+    }
+  }
   .navbar {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -448,7 +455,7 @@ h6 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 45%;
+    width: 50%;
     overflow: hidden;
     height: 100%;
     img{
@@ -637,6 +644,25 @@ h6 {
       top: 0;
       // background: rgba(255, 199, 0, 0.7);
       z-index: 1;
+    }
+  }
+  .hero-right{
+    padding-left: 50px;
+    form{
+      .input-group{
+        position: relative;
+        .select-down-arrow{
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          color: @main-color;
+        }
+      select{
+        &:invalid{
+          color: #6c757d;
+        }
+      }
+      }
     }
   }
 }
@@ -1880,6 +1906,7 @@ h6 {
     top: 0;
     left: 0;
     z-index: -2;
+    filter: brightness(0.5);
   }
   .section-title{
     margin: 20px auto;
@@ -1995,6 +2022,18 @@ h6 {
     bottom: -2%;
     z-index: 2;
   }
+  form{
+    .form-control{
+      background-color: transparent;
+      color: @main-color;
+    }
+    select{
+      &:invalid{
+        color: #6c757d;
+        
+      }
+    }
+  }
 }
 
 /* Dark Mode Styling */
@@ -2031,15 +2070,17 @@ h6 {
   background: url(@footer-image) no-repeat center center;
   background-size: cover;
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 90px;
   position: relative;
   z-index: 1;
+
 
   .branding-block {
     p {
       font-size: 14px;
     }
   }
+  
   // &:after{
   // 	content: '';
   // 	position: absolute;
@@ -2079,7 +2120,7 @@ h6 {
     margin-bottom: 36px;
     display: inline-block;
     img {
-      width: 80px;
+      width: 70px;
     }
   }
 
@@ -2144,6 +2185,20 @@ h6 {
         text-transform: capitalize;
         font-size: 12px;
       }
+    }
+  }
+  .block-1{
+    h4{
+      font-size: 18px;
+    }
+    h5{
+      font-size: 16px;
+    }
+  }
+  .block3{
+    h5,a{
+      font-size: 18px;
+      display: block;
     }
   }
 }

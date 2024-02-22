@@ -271,6 +271,12 @@ h6 {
   width: 100%;
   z-index: 1001;
 }
+.site-header nav {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.site-header nav .dropdown-menu a {
+  color: #000;
+}
 .site-header .navbar {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -336,7 +342,7 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 45%;
+  width: 50%;
   overflow: hidden;
   height: 100%;
 }
@@ -473,6 +479,21 @@ h6 {
   bottom: 0;
   top: 0;
   z-index: 1;
+}
+.hero-area .hero-right {
+  padding-left: 50px;
+}
+.hero-area .hero-right form .input-group {
+  position: relative;
+}
+.hero-area .hero-right form .input-group .select-down-arrow {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #ffc700;
+}
+.hero-area .hero-right form .input-group select:invalid {
+  color: #6c757d;
 }
 /***********************************************************
   6. Intro Section  
@@ -1423,6 +1444,7 @@ h6 {
   top: 0;
   left: 0;
   z-index: -2;
+  filter: brightness(0.5);
 }
 .contact-section .section-title {
   margin: 20px auto;
@@ -1515,6 +1537,13 @@ h6 {
   bottom: -2%;
   z-index: 2;
 }
+.contact-section form .form-control {
+  background-color: transparent;
+  color: #ffc700;
+}
+.contact-section form select:invalid {
+  color: #6c757d;
+}
 /* Dark Mode Styling */
 .dark-mode .contact-section address {
   color: #b0aac0;
@@ -1540,7 +1569,7 @@ h6 {
   background: url("https://res.cloudinary.com/threemindsdigitial/image/upload/v1693997926/invitation-estate/footer.webp") no-repeat center center;
   background-size: cover;
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 90px;
   position: relative;
   z-index: 1;
 }
@@ -1571,7 +1600,7 @@ h6 {
   display: inline-block;
 }
 .site-footer .footer-brand img {
-  width: 80px;
+  width: 70px;
 }
 .site-footer .footer-social {
   margin-top: 48px;
@@ -1624,6 +1653,17 @@ h6 {
   color: #b0aac0;
   text-transform: capitalize;
   font-size: 12px;
+}
+.site-footer .block-1 h4 {
+  font-size: 18px;
+}
+.site-footer .block-1 h5 {
+  font-size: 16px;
+}
+.site-footer .block3 h5,
+.site-footer .block3 a {
+  font-size: 18px;
+  display: block;
 }
 /***********************************************************
   17. Libraries
