@@ -350,6 +350,13 @@ h6 {
   object-position: center;
   height: 100%;
 }
+.hero-area .solaris:before {
+  content: " ";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+}
 .hero-area .form-control {
   background-color: transparent;
   color: #000;
@@ -494,6 +501,55 @@ h6 {
 }
 .hero-area .hero-right form .input-group select:invalid {
   color: #6c757d;
+}
+/***********************************************************
+  Project info Section  
+************************************************************/
+.project-info-area {
+  margin: 50px 0px;
+  position: relative;
+}
+.project-info-area .navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+.project-info-area .navbar .nav .nav-item .nav-link {
+  color: #ffc700;
+}
+.project-info-area .navbar .nav .nav-item .active {
+  background-color: transparent;
+  color: #ffc700;
+}
+.project-info-area .scrollspy-example h4 {
+  color: #ffc700;
+  margin-top: 40px;
+}
+.project-info-area .scrollspy-example .list-highlights .list-group-item {
+  padding-left: 0px;
+}
+.project-info-area-vertical {
+  margin: 50px 0px;
+  position: relative;
+}
+.project-info-area-vertical .navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+.project-info-area-vertical .navbar .nav .nav-link {
+  color: #ffc700;
+}
+.project-info-area-vertical .navbar .nav .active {
+  background-color: transparent;
+  color: #ffc700;
+}
+.project-info-area-vertical .scroll-vertical h4 {
+  color: #ffc700;
+  margin-top: 40px;
+}
+.project-info-area-vertical .scroll-vertical .list-highlights .list-group-item {
+  padding-left: 0px;
 }
 /***********************************************************
   6. Intro Section  

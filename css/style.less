@@ -464,6 +464,15 @@ h6 {
       height: 100%;
     }
   }
+  .solaris{
+    &:before{
+      content: " ";
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.3);
+      height: 100%;
+      width: 100%;
+    }
+  }
 
   // &:after{
   // 	content: '';
@@ -662,6 +671,82 @@ h6 {
           color: #6c757d;
         }
       }
+      }
+    }
+  }
+}
+
+
+
+
+/***********************************************************
+  Project info Section  
+************************************************************/
+.project-info-area{
+  margin: 50px 0px;
+  position: relative;
+
+  .navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    .nav{
+      .nav-item{
+        .nav-link{
+          color: @main-color;
+        }
+        .active{
+          background-color: transparent;
+          color: @main-color;
+          // background-color: @main-color;
+          // color: #fff;
+        }
+      }
+    }
+  }
+  .scrollspy-example{
+    h4{
+      color: @main-color;
+      margin-top: 40px;
+      &:not(:first-of-type){
+      }
+    }
+    .list-highlights{
+      .list-group-item{
+        padding-left: 0px;
+      }
+    }
+  }
+}
+.project-info-area-vertical{
+  margin: 50px 0px;
+  position: relative;
+  .navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    .nav{
+      .nav-link{
+        color: @main-color;
+      }
+      .active{
+        background-color: transparent;
+        color: @main-color;
+        // background-color: @main-color;
+        // color: #fff;
+      }
+    }
+  }
+  .scroll-vertical{
+    h4{
+      color: @main-color;
+      margin-top: 40px;
+      &:not(:first-of-type){
+      }
+    }
+    .list-highlights{
+      .list-group-item{
+        padding-left: 0px;
       }
     }
   }
