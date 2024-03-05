@@ -517,10 +517,6 @@ h6 {
 .project-info-area .navbar .nav .nav-item .nav-link {
   color: #ffc700;
 }
-.project-info-area .navbar .nav .nav-item .active {
-  background-color: transparent;
-  color: #ffc700;
-}
 .project-info-area .scrollspy-example h4 {
   color: #ffc700;
   margin-top: 40px;
@@ -531,6 +527,12 @@ h6 {
 .project-info-area-vertical {
   margin: 50px 0px;
   position: relative;
+  /* The Modal (background) */
+  /* Modal Content (image) */
+  /* Caption of Modal Image */
+  /* Add Animation */
+  /* The Close Button */
+  /* 100% Image Width on Smaller Screens */
 }
 .project-info-area-vertical .navbar {
   position: sticky;
@@ -541,8 +543,8 @@ h6 {
   color: #ffc700;
 }
 .project-info-area-vertical .navbar .nav .active {
-  background-color: transparent;
-  color: #ffc700;
+  background-color: #ffc700;
+  color: #fff;
 }
 .project-info-area-vertical .scroll-vertical h4 {
   color: #ffc700;
@@ -550,6 +552,104 @@ h6 {
 }
 .project-info-area-vertical .scroll-vertical .list-highlights .list-group-item {
   padding-left: 0px;
+}
+.project-info-area-vertical .project-img-thumb {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.project-info-area-vertical #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.project-info-area-vertical #myImg:hover {
+  opacity: 0.7;
+}
+.project-info-area-vertical .modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1000;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+.project-info-area-vertical .modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+.project-info-area-vertical #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+.project-info-area-vertical .modal-content,
+.project-info-area-vertical #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.project-info-area-vertical .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.project-info-area-vertical .close:hover,
+.project-info-area-vertical .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  .project-info-area-vertical .modal-content {
+    width: 100%;
+  }
+}
+.project-info-area-vertical h3 {
+  font-size: 1rem;
 }
 /***********************************************************
   6. Intro Section  
