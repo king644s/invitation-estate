@@ -505,25 +505,6 @@ h6 {
 /***********************************************************
   Project info Section  
 ************************************************************/
-.project-info-area {
-  margin: 50px 0px;
-  position: relative;
-}
-.project-info-area .navbar {
-  position: sticky;
-  top: 0px;
-  z-index: 10;
-}
-.project-info-area .navbar .nav .nav-item .nav-link {
-  color: #ffc700;
-}
-.project-info-area .scrollspy-example h4 {
-  color: #ffc700;
-  margin-top: 40px;
-}
-.project-info-area .scrollspy-example .list-highlights .list-group-item {
-  padding-left: 0px;
-}
 .project-info-area-vertical {
   margin: 50px 0px;
   position: relative;
@@ -539,10 +520,10 @@ h6 {
   top: 0px;
   z-index: 10;
 }
-.project-info-area-vertical .navbar .nav .nav-link {
+.project-info-area-vertical .navbar .nav-link {
   color: #ffc700;
 }
-.project-info-area-vertical .navbar .nav .active {
+.project-info-area-vertical .navbar .active {
   background-color: #ffc700;
   color: #fff;
 }

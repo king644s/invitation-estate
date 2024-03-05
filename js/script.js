@@ -1,3 +1,18 @@
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: "#navbar-example3",
+});
+
+// $(document).ready(function(){
+// 	$('.').click(function(){
+// 		$(this).toggleClass('active');
+//     $('#navbar-example3').toggleClass('active');
+// 	});
+// });
+
+$("#navbar-example3").on("activate.bs.scrollspy", function (event) {
+  console.log(event.target);
+});
+
 (function ($) {
   "use strict";
 
@@ -232,4 +247,3 @@
 
   $(".glitch-img").mgGlitch();
 })(jQuery);
-
