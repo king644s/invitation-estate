@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitation Estate - Thank You</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/threemindsdigitial/image/upload/v1694003837/invitation-estate/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/threemindsdigitial/image/upload/v1694003837/invitation-estate/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body class="vh-100">
+    <section
+      class="container text-center d-flex flex-column align-items-center justify-content-around h-100"
+    >
+      <h1>Thank You !</h1>
+      <script
+        src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+        type="module"
+      ></script>
+
+      <dotlottie-player
+        src="https://lottie.host/22cdb4d9-06c7-4d4f-ba15-2059b5673626/clprVChDXu.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        loop
+        autoplay
+      ></dotlottie-player>
+      <h3>
+        Thanks a bunch for filling that out. It means a lot to us, just like you
+        do! We really appreciate you giving us a moment of your time today.
+        Thanks for being you.
+      </h3>
+      <h6 class="text-secondary">
+        Copyright ©<span id="year"></span> | Invitation Estate | All Rights Reserved
+      </h6>
+    </section>
+
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>

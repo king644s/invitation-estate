@@ -1,7 +1,3 @@
-var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-  target: "#navbar-example3",
-});
-
 // $(document).ready(function(){
 // 	$('.').click(function(){
 // 		$(this).toggleClass('active');
