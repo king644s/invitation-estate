@@ -464,6 +464,17 @@ h6 {
       height: 100%;
     }
   }
+  .aboutus-banner{
+    width: 100%;
+    // position: relative;
+    &::before{
+      content: " ";
+      background: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  }
   .solaris{
     &:before{
       content: " ";
@@ -2064,7 +2075,7 @@ h6 {
 .contact-form{
   &:before{
     content: " ";
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     height: 100%;
     width: 100%;
