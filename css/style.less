@@ -74,7 +74,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -363,6 +363,24 @@ h6 {
   }
 }
 
+.download-brochure-button {
+  // border: 1px solid red;
+  background-color: @main-color;
+  color: #fff;
+  padding: 10px;
+  transform: translate(0%, -270%);
+  z-index: 10;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  a{
+    color: #fff;
+    &:hover{
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
 /***********************************************************
   4. Header
 ************************************************************/
@@ -371,16 +389,16 @@ h6 {
   position: absolute;
   width: 100%;
   z-index: 1001;
-  nav{
+  nav {
     background-color: rgba(0, 0, 0, 0.5);
-    .dropdown-menu{
-      a{
+    .dropdown-menu {
+      a {
         color: #000;
       }
     }
   }
   .navbar {
-   padding: 10px 0px;
+    padding: 10px 0px;
     z-index: 1;
     transition: 0.3s;
     .img-fluid {
@@ -391,7 +409,6 @@ h6 {
       padding-top: 12px;
       padding-bottom: 12px;
     }
-    
   }
 
   .nav-item {
@@ -421,7 +438,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    color: #F5F5F5;
+    color: #f5f5f5;
     margin-left: -144px;
     z-index: 20;
     border: none;
@@ -450,23 +467,23 @@ h6 {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  .hero-banner-img-bg{
+  .hero-banner-img-bg {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
     overflow: hidden;
     height: 100%;
-    img{
+    img {
       object-position: center;
-      // object-fit: cover;
+      object-fit: cover;
       height: 100%;
+      width: 50vw;
     }
   }
-  .aboutus-banner{
+  .aboutus-banner {
     width: 100%;
     // position: relative;
-    &::before{
+    &::before {
       content: " ";
       background: rgba(0, 0, 0, 0.5);
       height: 100%;
@@ -474,8 +491,8 @@ h6 {
       position: absolute;
     }
   }
-  .solaris{
-    &:before{
+  .solaris {
+    &:before {
       content: " ";
       position: absolute;
       background-color: rgba(0, 0, 0, 0.3);
@@ -494,14 +511,14 @@ h6 {
   // 	background: rgba(0, 0, 0, .1);
   // 	z-index: -1;
   // }
-  .form-control{
+  .form-control {
     background-color: transparent;
-    color:#000;
+    color: #000;
     // border-color: @main-color;
-    &:focus{
+    &:focus {
       outline: none;
       border-color: @main-color;
-      box-shadow: 0 0 0 0.25rem rgba(255,199,0,.25);
+      box-shadow: 0 0 0 0.25rem rgba(255, 199, 0, 0.25);
       border-radius: 10px;
     }
   }
@@ -514,7 +531,7 @@ h6 {
     > .row {
       width: 100%;
     }
-    .img-fluid{
+    .img-fluid {
       object-fit: cover;
       aspect-ratio: 1;
     }
@@ -665,29 +682,27 @@ h6 {
       z-index: 1;
     }
   }
-  .hero-right{
+  .hero-right {
     padding-left: 50px;
-    form{
-      .input-group{
+    form {
+      .input-group {
         position: relative;
-        .select-down-arrow{
+        .select-down-arrow {
           position: absolute;
           right: 10px;
           top: 10px;
           color: @main-color;
+          z-index: -1;
         }
-      select{
-        &:invalid{
-          color: #6c757d;
+        select {
+          &:invalid {
+            color: #6c757d;
+          }
         }
-      }
       }
     }
   }
 }
-
-
-
 
 /***********************************************************
   Project info Section  
@@ -696,72 +711,71 @@ h6 {
 //   margin: 50px 0px;
 //   position: relative;
 
-  // .navbar{
-  //   position: sticky;
-  //   top: 0px;
-  //   z-index: 10;
+// .navbar{
+//   position: sticky;
+//   top: 0px;
+//   z-index: 10;
 
-  //     .nav-item{
-  //       .nav-link{
-  //         color: @main-color;
-  //       }
-  //       .active{
-  //         // background-color: transparent;
-  //         // color: @main-color;
-  //         // background-color: @main-color;
-  //         // color: #fff;
-        
-  //     }
-  //   }
-  // }
-  // .scrollspy-example{
-  //   h4{
-  //     color: @main-color;
-  //     margin-top: 40px;
-  //     &:not(:first-of-type){
-  //     }
-  //   }
-  //   .list-highlights{
-  //     .list-group-item{
-  //       padding-left: 0px;
-  //     }
-  //   }
-  // }
+//     .nav-item{
+//       .nav-link{
+//         color: @main-color;
+//       }
+//       .active{
+//         // background-color: transparent;
+//         // color: @main-color;
+//         // background-color: @main-color;
+//         // color: #fff;
+
+//     }
+//   }
 // }
-.project-info-area-vertical{
+// .scrollspy-example{
+//   h4{
+//     color: @main-color;
+//     margin-top: 40px;
+//     &:not(:first-of-type){
+//     }
+//   }
+//   .list-highlights{
+//     .list-group-item{
+//       padding-left: 0px;
+//     }
+//   }
+// }
+// }
+.project-info-area-vertical {
   margin: 50px 0px;
   position: relative;
   // height: 100px;
-  .navbar{
+  .navbar {
     position: sticky;
     top: 0px;
     z-index: 10;
-    
-      .nav-link{
-        color: @main-color;
-      }
-      .active{
-        background-color: @main-color;
-        color: #fff;
-        // background-color: @main-color;
-        // color: #fff;
-      
+
+    .nav-link {
+      color: @main-color;
+    }
+    .active {
+      background-color: @main-color;
+      color: #fff;
+      // background-color: @main-color;
+      // color: #fff;
     }
   }
-  .scroll-vertical{
-    h4{
+  .scroll-vertical {
+    h4 {
       color: @main-color;
       margin-top: 40px;
-      &:not(:first-of-type){
+      &:not(:first-of-type) {
       }
     }
-    .list-highlights{
-      .list-group-item{
+    .list-highlights {
+      .list-group-item {
         padding-left: 0px;
       }
     }
   }
-  .project-img-thumb{
+  .project-img-thumb {
     height: 200px;
     width: 200px;
     object-fit: cover;
@@ -772,9 +786,11 @@ h6 {
     cursor: pointer;
     transition: 0.3s;
   }
-  
-  #myImg:hover {opacity: 0.7;}
-  
+
+  #myImg:hover {
+    opacity: 0.7;
+  }
+
   /* The Modal (background) */
   .modal {
     display: none; /* Hidden by default */
@@ -786,10 +802,10 @@ h6 {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
   }
-  
+
   /* Modal Content (image) */
   .modal-content {
     margin: auto;
@@ -797,7 +813,7 @@ h6 {
     width: 80%;
     max-width: 700px;
   }
-  
+
   /* Caption of Modal Image */
   #caption {
     margin: auto;
@@ -809,25 +825,34 @@ h6 {
     padding: 10px 0;
     height: 150px;
   }
-  
+
   /* Add Animation */
-  .modal-content, #caption {  
+  .modal-content,
+  #caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s;
   }
-  
+
   @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
+    from {
+      -webkit-transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
   }
-  
+
   @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
   }
-  
+
   /* The Close Button */
   .close {
     position: absolute;
@@ -838,22 +863,22 @@ h6 {
     font-weight: bold;
     transition: 0.3s;
   }
-  
+
   .close:hover,
   .close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
   }
-  
+
   /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 700px) {
     .modal-content {
       width: 100%;
     }
   }
 
-  h3{
+  h3 {
     font-size: 1rem;
   }
 }
@@ -937,6 +962,11 @@ h6 {
   .img-wrapper {
     position: relative;
     text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:before,
     &:after {
@@ -950,6 +980,7 @@ h6 {
       border-radius: 7px;
       border: 5px solid @main-color;
       top: 100px;
+      left: 0px;
     }
 
     &:after {
@@ -957,6 +988,7 @@ h6 {
       height: 36px;
       background: @main-color;
       // left: 0px;
+      right: 0px;
       bottom: 90px;
       border-radius: 4px;
     }
@@ -990,6 +1022,7 @@ h6 {
         font-size: 18px;
         text-transform: uppercase;
         color: @main-color;
+        font-weight: 600;
       }
 
       strong {
@@ -1212,13 +1245,14 @@ h6 {
       // width: 425px;
       object-fit: cover;
       object-position: center;
-
+      aspect-ratio: 1;
     }
 
     .box-content {
       color: #fff;
       text-align: center;
       width: 100%;
+      height: 100%;
       opacity: 0;
       position: absolute;
       bottom: 40%;
@@ -1226,6 +1260,18 @@ h6 {
       z-index: 2;
       transition: all 0.3s ease-out 0.1s;
       padding: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &:before{
+        height: 100%;
+        width: 100%;
+        content: " ";
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        z-index: -1;
+      }
     }
 
     .title {
@@ -1384,6 +1430,18 @@ h6 {
     right: 5%;
     bottom: -2%;
     z-index: 1;
+  }
+}
+
+.grid-icon {
+  background-color: @main-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 5px;
+  i {
+    font-size: 35px;
   }
 }
 
@@ -2071,8 +2129,8 @@ h6 {
 /***********************************************************
   15. Contact Section
 ************************************************************/
-.contact-form{
-  &:before{
+.contact-form {
+  &:before {
     content: " ";
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -2082,12 +2140,19 @@ h6 {
     left: 0;
     z-index: -1;
   }
-
+  .select-down-arrow{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: @main-color;
+    font-size: 30px;
+    z-index: -1;
+  }
 }
 .contact-section {
   padding-bottom: 60px;
   position: relative;
-  .contact-bg{
+  .contact-bg {
     background-image: url(@hero-image);
     background-size: cover;
     background-position: center;
@@ -2099,9 +2164,9 @@ h6 {
     z-index: -2;
     filter: brightness(0.5);
   }
-  .section-title{
+  .section-title {
     margin: 20px auto;
-    h2{
+    h2 {
       margin-bottom: 0px;
       color: #fff;
     }
@@ -2213,15 +2278,14 @@ h6 {
     bottom: -2%;
     z-index: 2;
   }
-  form{
-    .form-control{
+  form {
+    .form-control {
       background-color: transparent;
       color: @main-color;
     }
-    select{
-      &:invalid{
+    select {
+      &:invalid {
         color: #6c757d;
-        
       }
     }
   }
@@ -2265,13 +2329,12 @@ h6 {
   position: relative;
   z-index: 1;
 
-
   .branding-block {
     p {
       font-size: 14px;
     }
   }
-  
+
   // &:after{
   // 	content: '';
   // 	position: absolute;
@@ -2378,16 +2441,17 @@ h6 {
       }
     }
   }
-  .block-1{
-    h4{
+  .block-1 {
+    h4 {
       font-size: 18px;
     }
-    h5{
+    h5 {
       font-size: 16px;
     }
   }
-  .block3{
-    h5,a{
+  .block3 {
+    h5,
+    a {
       font-size: 18px;
       display: block;
     }
