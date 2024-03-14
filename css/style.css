@@ -267,11 +267,12 @@ h6 {
   background-color: #ffc700;
   color: #fff;
   padding: 10px;
-  transform: translate(0%, -270%);
+  transform: translate(100%, 25%);
   z-index: 10;
   cursor: pointer;
   text-align: center;
   font-weight: 600;
+  rotate: 270deg;
 }
 .download-brochure-button a {
   color: #fff;
@@ -407,16 +408,15 @@ h6 {
 }
 .hero-area .hero-head {
   color: #fff;
-  font-size: 50px;
+  font-size: 42px;
   margin-bottom: 24px;
+  color: #ffc700;
+  font-weight: 600;
 }
 .hero-area .hero-head small {
   font-size: 36px;
   margin-bottom: 24px;
   display: block;
-}
-.hero-area .hero-head strong {
-  color: #ffc700;
 }
 .hero-area .content-block p {
   font-size: 18px;

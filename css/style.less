@@ -368,11 +368,13 @@ h6 {
   background-color: @main-color;
   color: #fff;
   padding: 10px;
-  transform: translate(0%, -270%);
+  transform: translate(100%, 25%);
   z-index: 10;
   cursor: pointer;
   text-align: center;
   font-weight: 600;
+  // transform: rotate(270deg);
+  rotate: 270deg;
   a{
     color: #fff;
     &:hover{
@@ -539,7 +541,7 @@ h6 {
 
   .hero-head {
     color: @white;
-    font-size: 50px;
+    font-size: 42px;
     margin-bottom: 24px;
 
     small {
@@ -547,9 +549,10 @@ h6 {
       margin-bottom: 24px;
       display: block;
     }
-
+    color: @main-color;
+    font-weight: 600;
+    
     strong {
-      color: @main-color;
     }
   }
 
