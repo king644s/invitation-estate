@@ -660,6 +660,14 @@ h6 {
 .project-info-area-vertical h3 {
   font-size: 1rem;
 }
+.icon-box {
+  background-color: #ffc700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 10px;
+}
 /***********************************************************
   6. Intro Section  
 ************************************************************/
