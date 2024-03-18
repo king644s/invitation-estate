@@ -378,10 +378,12 @@ h6 {
   width: 100%;
   position: absolute;
 }
+.hero-area .solaris {
+  filter: brightness(0.5);
+}
 .hero-area .solaris:before {
   content: " ";
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
   height: 100%;
   width: 100%;
 }
@@ -408,16 +410,20 @@ h6 {
   aspect-ratio: 1;
 }
 .hero-area .hero-head {
-  color: #fff;
   font-size: 42px;
   margin-bottom: 24px;
   color: #ffc700;
   font-weight: 600;
 }
 .hero-area .hero-head small {
-  font-size: 36px;
+  margin-top: 10px;
+  font-size: 32px;
   margin-bottom: 24px;
   display: block;
+  color: #fff;
+}
+.hero-area .form-head {
+  font-size: 38px;
 }
 .hero-area .content-block p {
   font-size: 18px;
@@ -581,7 +587,7 @@ h6 {
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1000;
+  z-index: 1100;
   /* Sit on top */
   padding-top: 100px;
   /* Location of the box */
@@ -1958,12 +1964,21 @@ h6 {
 /* max-width: 1599px and min-width:992px */
 @media (max-width: 1599px) and (min-width: 1400px) {
   .hero-area .hero-head {
-    font-size: 50px;
+    font-size: 46px;
+  }
+  .hero-area .hero-head small {
+    font-size: 38px;
+  }
+  .hero-area .form-head {
+    font-size: 42px;
   }
 }
 @media (max-width: 1399px) and (min-width: 1200px) {
   .hero-area .hero-head {
     font-size: 40px;
+  }
+  .hero-area .form-head {
+    font-size: 38px;
   }
 }
 /* max-width: 1599px and min-width:1200px */

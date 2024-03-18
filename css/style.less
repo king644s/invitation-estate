@@ -376,9 +376,9 @@ h6 {
   // transform: rotate(270deg);
   rotate: 270deg;
   font-size: 14px;
-  a{
+  a {
     color: #fff;
-    &:hover{
+    &:hover {
       color: rgba(0, 0, 0, 0.5);
     }
   }
@@ -498,10 +498,11 @@ h6 {
     &:before {
       content: " ";
       position: absolute;
-      background-color: rgba(0, 0, 0, 0.3);
+      // background-color: rgba(0, 0, 0,1);
       height: 100%;
       width: 100%;
     }
+    filter: brightness(0.5);
   }
 
   // &:after{
@@ -541,22 +542,22 @@ h6 {
   }
 
   .hero-head {
-    color: @white;
     font-size: 42px;
     margin-bottom: 24px;
 
     small {
-      font-size: 36px;
+      margin-top: 10px;
+      font-size: 32px;
       margin-bottom: 24px;
       display: block;
+      color: @white;
     }
     color: @main-color;
     font-weight: 600;
-    
-    strong {
-    }
   }
-
+  .form-head {
+    font-size: 38px;
+  }
   .content-block {
     p {
       font-size: 18px;
@@ -799,7 +800,7 @@ h6 {
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
+    z-index: 1100; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -886,7 +887,7 @@ h6 {
     font-size: 1rem;
   }
 }
-.icon-box{
+.icon-box {
   background-color: @main-color;
   display: flex;
   align-items: center;
@@ -1278,7 +1279,7 @@ h6 {
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      &:before{
+      &:before {
         height: 100%;
         width: 100%;
         content: " ";
@@ -2154,7 +2155,7 @@ h6 {
     left: 0;
     z-index: -1;
   }
-  .select-down-arrow{
+  .select-down-arrow {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -2565,7 +2566,13 @@ h6 {
 @media (max-width: 1599px) and (min-width: 1400px) {
   .hero-area {
     .hero-head {
-      font-size: 50px;
+      font-size: 46px;
+      small{
+        font-size: 38px;
+      }
+    }
+    .form-head {
+      font-size: 42px;
     }
   }
 }
@@ -2574,6 +2581,9 @@ h6 {
   .hero-area {
     .hero-head {
       font-size: 40px;
+    }
+    .form-head {
+      font-size: 38px;
     }
   }
 }
