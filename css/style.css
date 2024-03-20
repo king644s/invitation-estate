@@ -410,7 +410,7 @@ h6 {
   aspect-ratio: 1;
 }
 .hero-area .hero-head {
-  font-size: 42px;
+  font-size: 44px;
   margin-bottom: 24px;
   color: #ffc700;
   font-weight: 600;
@@ -1793,6 +1793,13 @@ h6 {
   position: relative;
   z-index: 1;
 }
+.site-footer a {
+  color: #fff;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+  color: #ffc700;
+}
 .site-footer .branding-block p {
   font-size: 14px;
 }
@@ -1962,7 +1969,7 @@ h6 {
   18. Media Queries 
 ************************************************************/
 /* max-width: 1599px and min-width:992px */
-@media (max-width: 1599px) and (min-width: 1400px) {
+@media (max-width: 1599px) and (min-width: 1441px) {
   .hero-area .hero-head {
     font-size: 46px;
   }
@@ -1975,7 +1982,7 @@ h6 {
 }
 @media (max-width: 1399px) and (min-width: 1200px) {
   .hero-area .hero-head {
-    font-size: 40px;
+    font-size: 38px;
   }
   .hero-area .form-head {
     font-size: 38px;
