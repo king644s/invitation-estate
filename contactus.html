@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/threemindsdigitial/image/upload/v1694003837/invitation-estate/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/threemindsdigitial/image/upload/v1694003837/invitation-estate/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" type="text/css" href="css/pe-helper.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title>Invitation Estates</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#site-navbar" class="home-hacker">
+    <!-- PRE LOADER -->
+    <div class="preloader js-preloader flex-center">
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <div class="position-fixed top-50 end-0 download-brochure-button">
+      <a href="./assets/solaris-BROCHURE-01.pdf">Download Brochure</a>
+    </div>
+
+    <!-- SITE HEADER -->
+    <header class="site-header" id="site-header">
+      <nav class="navbar navbar-expand-xl sticky-top" id="site-navbar">
+        <div class="container d-flex align-items-center justify-content-center">
+          <div
+            class="d-flex align-items-center justify-content-start justify-content-md-center"
+          >
+            <a href="./index.html"
+              ><img
+                class="img-fluid"
+                src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1694001651/invitation-estate/logo-3x.png"
+                alt="Investment Estates logo"
+            /></a>
+          </div>
+          <!-- <a href="#contact-section" class="get-in-touch">
+            <i class="pe-7s-call"></i>
+            GET IN TOUCH
+          </a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+              <!-- <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="#site-header">Home</a>
+		        </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">About Us</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#portfolio-section">Projects</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Projects
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./projects/solaris.html"
+                      >Solaris</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- .container -->
+      </nav>
+      <!-- .navbar -->
+    </header>
+    <!-- .site-header -->
+
+    <!-- HERO AREA -->
+    <section class="hero-area" id="hero-area">
+      <div class="container">
+        <div class="hero-content d-flex justify-content-center">
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-6 text-center content-block">
+              <!-- <h1 class="hero-head">
+                Crafting elegance <strong>beyond expectations!</strong>
+              </h1>
+              <p>
+                Our vision is to create a harmonious blend of sophistication,
+                sustainability, and breathtaking natural beauty. With every
+                aspect meticulously designed, we are creating an exclusive
+                symbol of aspirational luxury and modern living that sets the
+                stage for a truly extraordinary living experience leading to a
+                new dawn of luxury.
+              </p> -->
+              <!-- <div
+                class="link-group d-flex align-items-center justify-content-center flex-column flex-sm-row gap-sm-3"
+              >
+                <a class="btn-main" href="#portfolio-section">PROJECT IMAGES</a>
+                <a
+                  class="btn-ghost"
+                  href="assets/Solaris Brochure_A3_2ndJan_2024.pdf"
+                  download
+                  >DOWNLOAD BROCHURE</a
+                >
+              </div> -->
+            </div>
+            <div class="col-6">
+              <div class="hero-right">
+                <h1 class="hero-head">
+                  <!-- <strong>Let Us Know</strong> -->
+                  Let us know<br />what are you looking for!
+                  <small></small>
+                </h1>
+                <form
+                  class="row g-3"
+                  id="invitation-contact"
+                  method="POST"
+                  action="php/form-handler.php"
+                >
+                  <div class="col-md-6">
+                    <div class="input-group mb-3">
+                      <label for="inputName" class="form-label visually-hidden"
+                        >Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputName"
+                        placeholder="Name*"
+                        name="inputName"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-group mb-3">
+                      <label
+                        for="inputContactNumber"
+                        class="form-label visually-hidden"
+                        >Contact No</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="inputContactNumber"
+                        name="inputContactNumber"
+                        placeholder="Contact No*"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="input-group mb-3">
+                      <label for="inputEmail" class="form-label visually-hidden"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail"
+                        name="inputEmail"
+                        placeholder="Email*"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-group mb-3">
+                      <label for="inputCity" class="form-label visually-hidden"
+                        >City</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputCity"
+                        placeholder="City*"
+                        name="inputCity"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="input-group mb-3">
+                      <label
+                        for="inputProject"
+                        class="form-label visually-hidden"
+                        >Project</label
+                      >
+                      <select
+                        class="form-control"
+                        id="inputProject"
+                        name="inputProject"
+                        placeholder="Project*"
+                        required
+                      >
+                        <option value="" hidden>Project*</option>
+                        <option value="Solaris">Solaris</option>
+                        <option>Project 1</option>
+                        <option>Project 2</option>
+                        <option>Project 3</option>
+                      </select>
+                      <!-- <i class="bi-arrow-down" style="color: red"></i> -->
+                      <i class="pe-7s-bottom-arrow select-down-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="inputMessage" class="form-label visually-hidden"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control mb-3"
+                      id="inputMessage"
+                      name="inputMessage"
+                      placeholder="Your message here*"
+                      required
+                      rows="4"
+                    ></textarea>
+                    <button type="submit" class="btn btn-main" name="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- .row -->
+        </div>
+        <!-- .hero-content -->
+      </div>
+      <div class="hero-banner-img-bg">
+        <img
+          src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710339823/invitation-estate/hero-banner-1_result_w4dujs.webp"
+        />
+      </div>
+      <!-- .container -->
+
+      <!-- <div class="line-wrapper">
+        <div class="lines">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div> -->
+      <!-- .line-wrapper -->
+
+      <!-- <div class="glitch-img"></div> -->
+      <!-- .glitch-img -->
+    </section>
+    <!-- .hero-area -->
+
+    <!-- INTRO SECTION -->
+    <!-- <section class="intro-section section-block">
+      <div class="container">
+        <div class="section-title">
+          <h2>Crafting elegance beyond expectations!</h2>
+          <p class="lead">
+            Our vision is to create a harmonious blend of sophistication,
+            sustainability, and breathtaking natural beauty.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up">
+            <div class="item-wrapper">
+              <div class="icon-box"><i class="pe-7s-science"></i></div>
+              <div class="content-wrapper">
+                <h3>Creativity</h3>
+                <p>
+                  Duis aute irure dolor in it esse cillum dolore eu fugiat nulla
+                  pari erunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
+            <div class="item-wrapper">
+              <div class="icon-box"><i class="pe-7s-diamond"></i></div>
+              <div class="content-wrapper">
+                <h3>Dedication</h3>
+                <p>
+                  Beaboris nisi ut aliquip ex ea commodo consen cillum dolore eu
+                  fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-6"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1200"
+          >
+            <div class="item-wrapper">
+              <div class="icon-box"><i class="pe-7s-rocket"></i></div>
+              <div class="content-wrapper">
+                <h3>Hard Work</h3>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui offi llit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="design-elements">
+        <img
+          class="de-intro-1 elem-updown"
+          src="image/design-elements/intro-element-1.png"
+          alt="intro element 1"
+        />
+      </div>
+    </section> -->
+    <!-- .intro-section -->
+
+    <!-- SKILL SECTION -->
+    <!-- <section class="skill-section section-block" id="skill-section">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-xl-6 content-block"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
+            <h2>
+              <span>My Skills</span>I'm great in what I do and I'm loving it
+            </h2>
+            <p class="lead">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="col-xl-6 progress-block">
+            <div class="progress-wrapper">
+              <h4>Competitive Programming</h4>
+              <p class="progress-value">84%</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 0%"
+                  aria-valuenow="84"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="progress-wrapper">
+              <h4>Algorithm &amp; Data Structure</h4>
+              <p class="progress-value">50%</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 0%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="progress-wrapper">
+              <h4>Game Development</h4>
+              <p class="progress-value">75%</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 0%"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="progress-wrapper">
+              <h4>Web Application</h4>
+              <p class="progress-value">96%</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 0%"
+                  aria-valuenow="96"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+     
+    </section> -->
+    <!-- .skill-section -->
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio-section section-block" id="portfolio-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Site Address</h2>
+          <p class="lead">Exceptional life space exceeding expectations</p>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.650434504963!2d78.2430625!3d17.4764375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbed828473d1e5%3A0x3f56c838028a9dc5!2sSOLARIS%20a%20project%20by%20Invitation%20Estates!5e0!3m2!1sen!2sin!4v1711010704939!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-4 ">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><h3>Contact Us:</h3></li>
+              <li
+                class="list-group-item d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="icon-cont">
+                  <i class="pe-7s-phone"></i>
+                </div>
+                <a href="tel:+917799036365">+91 77990 36365</a>
+              </li>
+              <li
+                class="list-group-item d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="icon-cont">
+                  <i class="pe-7s-phone"></i>
+                </div>
+                <a href="tel:+917799036364">+91 77990 36364</a>
+              </li>
+              <li
+                class="list-group-item d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="icon-cont">
+                  <i class="pe-7s-mail"></i>
+                </div>
+                <a href="mainto:info@invitationestates.com"
+                  >info@invitationestates.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row grid" data-aos="fade-up" data-aos-duration="2000"></div>
+      </div>
+    </section>
+
+    <section
+      class="contact-section contact-form section-block pt-5"
+      id="contact-section"
+    >
+      <div class="container">
+        <div class="section-title">
+          <h2>GET IN TOUCH</h2>
+          <!-- <p class="lead">
+            Duis aute irure dolor in reprehen pteur sint occaecat cupidatat non
+            proident, sunt in culim id est.
+          </p> -->
+        </div>
+        <!-- .section-title -->
+        <div class="row">
+          <div
+            class="col-lg-6"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <!-- <div class="map-wrapper" id="mapwrapper"></div> -->
+          </div>
+          <div
+            class="col-lg-12 form-block"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="1100"
+          >
+            <h3>Write us a message!</h3>
+            <div class="form-message">
+              <p></p>
+            </div>
+            <form
+              class="row g-3"
+              id="invitation-contact"
+              method="POST"
+              action="php/form-handler.php"
+            >
+              <div class="col-md-6">
+                <div class="input-group mb-3">
+                  <label for="inputName" class="form-label visually-hidden"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="Name*"
+                    name="inputName"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group mb-3">
+                  <label
+                    for="inputContactNumber"
+                    class="form-label visually-hidden"
+                    >Contact No</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="inputContactNumber"
+                    name="inputContactNumber"
+                    placeholder="Contact No*"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group mb-3">
+                  <label for="inputEmail" class="form-label visually-hidden"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    name="inputEmail"
+                    placeholder="Email*"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group mb-3">
+                  <label for="inputCity" class="form-label visually-hidden"
+                    >City</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCity"
+                    name="inputCity"
+                    placeholder="City*"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="input-group mb-3">
+                  <label for="inputProject" class="form-label visually-hidden"
+                    >Project</label
+                  >
+
+                  <select
+                    class="form-control"
+                    id="inputProject"
+                    name="inputProject"
+                    placeholder="Project*"
+                    required
+                  >
+                    <option value="" hidden disabled selected>Project*</option>
+                    <option value="Solaris">Solaris</option>
+                    <option>Project 1</option>
+                    <option>Project 2</option>
+                    <option>Project 3</option>
+                  </select>
+                  <i class="pe-7s-bottom-arrow select-down-arrow"></i>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="inputMessage" class="form-label visually-hidden"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control mb-3"
+                  id="inputMessage"
+                  name="inputMessage"
+                  placeholder="Your message here*"
+                  required
+                ></textarea>
+                <button type="submit" class="btn btn-main" name="submit">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="contact-bg"></div>
+      <!-- .container -->
+      <!-- <div class="design-elements">
+        <img
+          class="de-contact-1 elem-updown"
+          src="image/design-elements/contact-element-1.png"
+          alt="contact element 1"
+        />
+        <img
+          class="de-contact-2 elem-updown"
+          src="image/design-elements/contact-element-2.png"
+          alt="contact element 2"
+        />
+      </div> -->
+      <!-- .design-elements -->
+    </section>
+    <!-- CONTACT SECTION -->
+    <section class="contact-section section-block" id="contact-section">
+      <div class="container">
+        <!-- .section-title -->
+
+        <div class="row contact-options">
+          <div
+            class="col-lg-6 d-flex justify-content-xxl-center align-items-xl-center"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div class="icon-box"><i class="pe-7s-clock"></i></div>
+            <div class="content-wrapper">
+              <h4>Office Hours</h4>
+              <p>Monday to Sunday</p>
+              <p>9 a.m. to 7 p.m.</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 d-flex justify-content-xxl-center align-items-xl-center"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <div class="icon-box"><i class="pe-7s-map-marker"></i></div>
+            <div class="content-wrapper">
+              <h4>Address</h4>
+              <address>
+                Invitation Estates, Third Floor, Plot No 23, Sy. No 136,
+                Gachibowli, Hyderabad - 500032
+              </address>
+              <a href="tel:+919885511435">+91 988 551 1435</a>
+            </div>
+          </div>
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .container -->
+      <!-- <div class="design-elements">
+        <img
+          class="de-contact-1 elem-updown"
+          src="image/design-elements/contact-element-1.png"
+          alt="contact element 1"
+        />
+        <img
+          class="de-contact-2 elem-updown"
+          src="image/design-elements/contact-element-2.png"
+          alt="contact element 2"
+        />
+      </div> -->
+      <!-- .design-elements -->
+    </section>
+    <!-- .contact-section -->
+
+    <!-- TESTIMONIAL SECTION -->
+    <section class="testimonial-section section-block" id="testimonial-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p class="lead">
+            Discover the stories behind our satisfied homeowners' experiences.
+          </p>
+        </div>
+
+        <div class="testimonial-carousel swiper">
+          <div class="swiper-wrapper">
+            <div class="testimonial-item swiper-slide">
+              <div class="item-wrapper">
+                <div class="quote-icon">
+                  <img src="image/quote-icon.png" alt="quote icon" />
+                </div>
+                <p>
+                  Ut enim ad minim veniam quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute ir
+                  cm id est laborum.
+                </p>
+                <div
+                  class="quote-author d-flex align-items-center justify-content-center"
+                >
+                  <div class="image-block">
+                    <img
+                      class="img-fluid"
+                      src="image/testimonial/testimonial-author-1.jpg"
+                      alt="testimonial author"
+                    />
+                  </div>
+                  <h4>James Anderson<span>Web Developer</span></h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item swiper-slide">
+              <div class="item-wrapper">
+                <div class="quote-icon">
+                  <img src="image/quote-icon.png" alt="quote icon" />
+                </div>
+                <p>
+                  Ut enim ad minim veniam quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute ir
+                  cm id est laborum.
+                </p>
+                <div
+                  class="quote-author d-flex align-items-center justify-content-center"
+                >
+                  <div class="image-block">
+                    <img
+                      class="img-fluid"
+                      src="image/testimonial/testimonial-author-3.jpg"
+                      alt="testimonial author"
+                    />
+                  </div>
+                  <h4>Dona Josefine<span>Web Developer</span></h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item swiper-slide">
+              <div class="item-wrapper">
+                <div class="quote-icon">
+                  <img src="image/quote-icon.png" alt="quote icon" />
+                </div>
+                <p>
+                  Ut enim ad minim veniam quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute ir
+                  cm id est laborum.
+                </p>
+                <div
+                  class="quote-author d-flex align-items-center justify-content-center"
+                >
+                  <div class="image-block">
+                    <img
+                      class="img-fluid"
+                      src="image/testimonial/testimonial-author-4.jpg"
+                      alt="testimonial author"
+                    />
+                  </div>
+                  <h4>Mark Anthony <span>Web Developer</span></h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item swiper-slide">
+              <div class="item-wrapper">
+                <div class="quote-icon">
+                  <img src="image/quote-icon.png" alt="quote icon" />
+                </div>
+                <p>
+                  Ut enim ad minim veniam quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute ir
+                  cm id est laborum.
+                </p>
+                <div
+                  class="quote-author d-flex align-items-center justify-content-center"
+                >
+                  <div class="image-block">
+                    <img
+                      class="img-fluid"
+                      src="image/testimonial/testimonial-author-2.jpg"
+                      alt="testimonial author"
+                    />
+                  </div>
+                  <h4>Sanjida Ema<span>Web Developer</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- .testimonial-section -->
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer" id="site-footer">
+      <div class="container">
+        <div class="row align-items-start justify-content-center">
+          <div class="col-lg-4 branding-block block-1">
+            <a class="footer-brand" href="./index.html"
+              ><img
+                src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1693995302/invitation-estate/logo-3x.png"
+                alt="Invitation Estates logo"
+            /></a>
+            <h4 class="hero-head" style="margin-bottom: 0px; color: #fff">
+              Invitation Estates epitomizes the fusion of prestige and passion,
+              dedicated to crafting a legacy of excellence in luxury living.
+            </h4>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-lg-3 branding-block">
+            <ul class="list mt-0 mx-auto">
+              <li class="list-item me-0">
+                <a href="./projects/solaris.html"> Solaris</a>
+              </li>
+              <li class="list-item me-0">
+                <a href="./assets/solaris-BROCHURE-01.pdf">Download Brochure</a>
+              </li>
+              <li class="list-item me-0">
+                <a href="#">Terms & Conditions</a>
+              </li>
+              <li class="list-item me-0">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-item me-0">
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-1"></div>
+
+          <div class="col-lg-3 branding-block block3">
+            <h5 class="hero-head" style="margin-bottom: 0px; color: #fff">
+              Contact Us
+            </h5>
+            <a href="tel:+917799036365">+91 77990 36365</a>
+            <a href="tel:+917799036364">+91 77990 36364</a>
+            <a href="mainto:info@invitationestates.com"
+              >info@invitationestates.com</a
+            >
+
+            <ul class="list-inline footer-social">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- .row -->
+        <div class="back-to-top">
+          <a href="#site-header"><i class="bi bi-box-arrow-up"></i></a>
+        </div>
+
+        <!-- .footer-bottom -->
+      </div>
+      <!-- .container -->
+    </footer>
+    <!-- .site-footer -->
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.preloadinator.min.js"></script>
+    <script src="js/vanilla-tilt.min.js"></script>
+    <script src="js/mgGlitch.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
