@@ -378,6 +378,9 @@ h6 {
   width: 100%;
   position: absolute;
 }
+.hero-area .aboutus-banner img {
+  width: 100vw;
+}
 .hero-area .solaris {
   filter: brightness(0.5);
 }
