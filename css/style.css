@@ -687,6 +687,7 @@ h6 {
   position: relative;
   background: #fff;
   transition: 0.3s;
+  height: 100%;
 }
 .intro-section .item-wrapper:after {
   content: "";
@@ -708,8 +709,17 @@ h6 {
   transform: rotate(-10deg);
 }
 .intro-section .icon-box {
-  font-size: 48px;
-  color: #ffc700;
+  font-size: 40px;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-section .content-wrapper {
+  margin-top: 10px;
 }
 .intro-section h3 {
   font-size: 28px;

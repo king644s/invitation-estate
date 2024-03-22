@@ -911,6 +911,7 @@ h6 {
     position: relative;
     background: #fff;
     transition: 0.3s;
+    height: 100%;
 
     &:after {
       content: "";
@@ -936,11 +937,19 @@ h6 {
   }
   .icon-box {
     //width: 90px;
-    font-size: 48px;
-    color: @main-color;
+    font-size: 40px;
+    // color: @main-color;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .content-wrapper {
+    margin-top: 10px;
   }
 
   h3 {
