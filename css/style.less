@@ -2786,14 +2786,14 @@ h6 {
     }
 
     .nav-link {
-      color: @title-black;
+      // color: @title-black;
       padding-top: 12px;
       padding-bottom: 12px;
       border-bottom: 1px solid darken(@light-gray, 10%);
     }
 
     .navbar-collapse {
-      background: @white;
+      // background: @white;
     }
 
     .nav-item {
@@ -2877,13 +2877,13 @@ h6 {
     .img-wrapper {
       text-align: left;
       &:before {
-        left: 430px;
+        // left: 430px;
         top: 84px;
       }
 
       &:after {
         left: 240px;
-        bottom: -72px;
+        // bottom: -72px;
       }
     }
 
@@ -2978,6 +2978,15 @@ h6 {
 /* max-width: 1199px and min-width:992px */
 
 @media (max-width: 1199px) and (min-width: 992px) {
+  .hero-area{
+    .hero-head{
+      font-size: 28px;
+      text-align: left;
+    }
+  }
+  .btn-main{
+    padding: 8px 20px;
+  }
   .blog-section {
     .post-group {
       h3 {
@@ -2991,6 +3000,13 @@ h6 {
 /* max-width: 991px and min-width:768px */
 
 @media (max-width: 991px) and (min-width: 768px) {
+  .about-section {
+    .img-wrapper{
+      &:after{
+        left: unset;
+      }
+    }
+  }
   .testimonial-section {
     .swiper {
       height: 360px;
@@ -3020,8 +3036,9 @@ h6 {
   }
 
   .site-footer {
+    padding-bottom: 0px;
     .row > div {
-      margin-bottom: 48px;
+      margin-bottom: 10px;
 
       &:last-child {
         margin-bottom: 0;
@@ -3033,6 +3050,7 @@ h6 {
 /* max-width: 767px */
 
 @media (max-width: 767px) {
+
   .btn-main,
   .btn-ghost,
   .bt-text {
@@ -3052,6 +3070,9 @@ h6 {
   }
 
   .hero-area {
+    .hero-right{
+      padding-left: 0px;
+    }
     .btn-main {
       margin-right: 0;
       margin-bottom: 30px;
@@ -3314,7 +3335,7 @@ h6 {
     }
 
     .row > div {
-      margin-bottom: 48px;
+      margin-bottom: 10px;
     }
 
     .footer-bottom {

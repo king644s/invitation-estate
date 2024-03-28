@@ -2121,13 +2121,9 @@ h6 {
     line-height: 1.5em;
   }
   .site-header .nav-link {
-    color: #222;
     padding-top: 12px;
     padding-bottom: 12px;
     border-bottom: 1px solid #e0e0e0;
-  }
-  .site-header .navbar-collapse {
-    background: #fff;
   }
   .site-header .nav-item:last-child .nav-link {
     border-bottom: none;
@@ -2186,12 +2182,10 @@ h6 {
     text-align: left;
   }
   .about-section .img-wrapper:before {
-    left: 430px;
     top: 84px;
   }
   .about-section .img-wrapper:after {
     left: 240px;
-    bottom: -72px;
   }
   .about-section .about-img-2 {
     bottom: -96px;
@@ -2245,6 +2239,13 @@ h6 {
 }
 /* max-width: 1199px and min-width:992px */
 @media (max-width: 1199px) and (min-width: 992px) {
+  .hero-area .hero-head {
+    font-size: 28px;
+    text-align: left;
+  }
+  .btn-main {
+    padding: 8px 20px;
+  }
   .blog-section .post-group h3 {
     line-height: 1.2;
     margin-top: 24px;
@@ -2252,6 +2253,9 @@ h6 {
 }
 /* max-width: 991px and min-width:768px */
 @media (max-width: 991px) and (min-width: 768px) {
+  .about-section .img-wrapper:after {
+    left: unset;
+  }
   .testimonial-section .swiper {
     height: 360px;
   }
@@ -2264,8 +2268,11 @@ h6 {
   .blog-section .modal .blog-title {
     font-size: 30px;
   }
+  .site-footer {
+    padding-bottom: 0px;
+  }
   .site-footer .row > div {
-    margin-bottom: 48px;
+    margin-bottom: 10px;
   }
   .site-footer .row > div:last-child {
     margin-bottom: 0;
@@ -2283,6 +2290,9 @@ h6 {
   }
   .fixed-top .navbar-brand img {
     width: 96px;
+  }
+  .hero-area .hero-right {
+    padding-left: 0px;
   }
   .hero-area .btn-main {
     margin-right: 0;
@@ -2460,7 +2470,7 @@ h6 {
     padding-right: 12px;
   }
   .site-footer .row > div {
-    margin-bottom: 48px;
+    margin-bottom: 10px;
   }
   .site-footer .footer-bottom {
     margin-top: 0;
