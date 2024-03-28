@@ -2123,7 +2123,6 @@ h6 {
   .site-header .nav-link {
     padding-top: 12px;
     padding-bottom: 12px;
-    border-bottom: 1px solid #e0e0e0;
   }
   .site-header .nav-item:last-child .nav-link {
     border-bottom: none;
@@ -2183,9 +2182,6 @@ h6 {
   }
   .about-section .img-wrapper:before {
     top: 84px;
-  }
-  .about-section .img-wrapper:after {
-    left: 240px;
   }
   .about-section .about-img-2 {
     bottom: -96px;
@@ -2280,6 +2276,32 @@ h6 {
 }
 /* max-width: 767px */
 @media (max-width: 767px) {
+  .project-info-area-vertical .container .scroll-vertical .fs-6 {
+    font-size: 12px !important;
+  }
+  .solaris-head {
+    padding: 0px;
+  }
+  .solaris-head .container {
+    padding: 0px;
+  }
+  .solaris-head .content-block {
+    margin-top: 80px;
+    padding: 0px;
+    position: relative;
+  }
+  .solaris-head h1 {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+  }
+  .solaris-head .hero-banner-img-bg {
+    position: static;
+  }
+  .solaris-head .hero-banner-img-bg img {
+    height: unset;
+    width: 100%;
+  }
   .btn-main,
   .btn-ghost,
   .bt-text {

@@ -493,7 +493,7 @@ h6 {
       width: 100%;
       position: absolute;
     }
-    img{
+    img {
       width: 100vw;
     }
   }
@@ -2789,7 +2789,7 @@ h6 {
       // color: @title-black;
       padding-top: 12px;
       padding-bottom: 12px;
-      border-bottom: 1px solid darken(@light-gray, 10%);
+      // border-bottom: 1px solid darken(@light-gray, 10%);
     }
 
     .navbar-collapse {
@@ -2882,7 +2882,7 @@ h6 {
       }
 
       &:after {
-        left: 240px;
+        // left: 240px;
         // bottom: -72px;
       }
     }
@@ -2978,13 +2978,13 @@ h6 {
 /* max-width: 1199px and min-width:992px */
 
 @media (max-width: 1199px) and (min-width: 992px) {
-  .hero-area{
-    .hero-head{
+  .hero-area {
+    .hero-head {
       font-size: 28px;
       text-align: left;
     }
   }
-  .btn-main{
+  .btn-main {
     padding: 8px 20px;
   }
   .blog-section {
@@ -3001,8 +3001,8 @@ h6 {
 
 @media (max-width: 991px) and (min-width: 768px) {
   .about-section {
-    .img-wrapper{
-      &:after{
+    .img-wrapper {
+      &:after {
         left: unset;
       }
     }
@@ -3050,6 +3050,48 @@ h6 {
 /* max-width: 767px */
 
 @media (max-width: 767px) {
+  .project-info-area-vertical{
+    // padding: 0px;
+    .container{
+      // padding: 0px;
+      // .navbar{
+      //   .nav-link{
+      //     word-break: normal;
+      //     padding: 5px;
+      //     font-size: 14px;
+      //   }
+      // }
+      .scroll-vertical{
+       .fs-6{
+        font-size: 12px !important;
+       }
+      }
+    }
+  }
+  .solaris-head {
+    padding: 0px;
+    .container {
+      padding: 0px;
+    }
+    .content-block{
+      margin-top: 80px;
+      padding: 0px;
+      position: relative;
+    }
+    h1 {
+      position: absolute;
+      z-index: 10;
+      top: 10px;
+    }
+
+    .hero-banner-img-bg {
+      position: static;
+      img {
+        height: unset;
+        width: 100%;
+      }
+    }
+  }
 
   .btn-main,
   .btn-ghost,
@@ -3070,7 +3112,7 @@ h6 {
   }
 
   .hero-area {
-    .hero-right{
+    .hero-right {
       padding-left: 0px;
     }
     .btn-main {

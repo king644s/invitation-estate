@@ -56,8 +56,10 @@
 
     <!-- SITE HEADER -->
     <header class="site-header" id="site-header">
-      <nav class="navbar navbar-expand-xl sticky-top" id="site-navbar">
-        <div class="container d-flex align-items-center justify-content-center">
+      <nav class="navbar navbar-expand-lg sticky-top" id="site-navbar">
+        <div
+          class="container d-flex align-items-center justify-content-between justify-content-lg-center"
+        >
           <div
             class="d-flex align-items-center justify-content-start justify-content-md-center"
           >
@@ -69,9 +71,9 @@
             /></a>
           </div>
           <!-- <a href="#contact-section" class="get-in-touch">
-        <i class="pe-7s-call"></i>
-        GET IN TOUCH
-      </a> -->
+            <i class="pe-7s-call"></i>
+            GET IN TOUCH
+          </a> -->
           <button
             class="navbar-toggler"
             type="button"
@@ -86,17 +88,17 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-lg-0">
               <!-- <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#site-header">Home</a>
-        </li> -->
+		          <a class="nav-link active" aria-current="page" href="#site-header">Home</a>
+		        </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="../aboutus.html">About Us</a>
+                <a class="nav-link" href="./aboutus.html">About Us</a>
               </li>
               <!-- <li class="nav-item">
-            <a class="nav-link" href="#portfolio-section">Projects</a>
-          </li> -->
+                <a class="nav-link" href="#portfolio-section">Projects</a>
+              </li> -->
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle active"
+                  class="nav-link dropdown-toggle"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -107,12 +109,14 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item active" href="#">Solaris</a>
+                    <a class="dropdown-item" href="./projects/solaris.html"
+                      >Solaris</a
+                    >
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../contactus.html">Contact Us</a>
+                <a class="nav-link" href="./contactus.html">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -124,42 +128,26 @@
     <!-- .site-header -->
 
     <!-- HERO AREA -->
-    <section class="hero-area" id="hero-area">
+    <section class="hero-area solaris-head" id="hero-area">
       <div class="container">
         <div
           class="hero-content d-flex align-items-center justify-content-center"
         >
           <div class="row align-items-start justify-content-center">
-            <div class="col-6 content-block h-100">
+            <div class="col-12 col-md-6 content-block ">
               <h1 class="hero-head">
                 The New Dawn of Luxury<br />
                 <small> 2, 2.5 & 3 BHK Luxury Apartments </small>
               </h1>
-              <!-- <h1 class="hero-head">
-                Crafting elegance <strong>beyond expectations!</strong>
-              </h1>
-              <p>
-                Our vision is to create a harmonious blend of sophistication,
-                sustainability, and breathtaking natural beauty. With every
-                aspect meticulously designed, we are creating an exclusive
-                symbol of aspirational luxury and modern living that sets the
-                stage for a truly extraordinary living experience leading to a
-                new dawn of luxury.
-              </p> -->
-              <!-- <div
-                class="link-group d-flex align-items-center justify-content-center flex-column flex-sm-row gap-sm-3"
-              >
-                <a class="btn-main" href="#portfolio-section">PROJECT IMAGES</a>
-                <a
-                  class="btn-ghost"
-                  href="assets/Solaris Brochure_A3_2ndJan_2024.pdf"
-                  download
-                  >DOWNLOAD BROCHURE</a
-                >
-              </div> -->
+              <div class="d-md-none hero-banner-img-bg solaris">
+                <img
+                class="img-fluid"
+                  src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1694002299/invitation-estate/hero-banner.jpg"
+                />
+              </div>
             </div>
-            <div class="col-6 align-self-center">
-              <div class="hero-right">
+            <div class="col-12 col-md-6 align-self-center">
+              <div class="hero-right pt-3 pt-md-0 px-3 px-md-0">
                 <h2 class="hero-head form-head">
                   Let us know<br />what are you looking for!
                 </h2>
@@ -256,7 +244,7 @@
         </div>
         <!-- .hero-content -->
       </div>
-      <div class="hero-banner-img-bg solaris">
+      <div class="d-none d-md-block hero-banner-img-bg solaris">
         <img
           src="https://res.cloudinary.com/threemindsdigitial/image/upload/v1694002299/invitation-estate/hero-banner.jpg"
         />
@@ -284,10 +272,10 @@
     >
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="d-none d-md-block col-3">
             <nav
               id="navbar-example3"
-              class="navbar navbar-light flex-column align-items-stretch p-3"
+              class="navbar navbar-light flex-column align-items-stretch p-0 p-lg-3"
             >
               <!-- <nav class="nav nav-pills flex-column list-group"> -->
               <a class="nav-link" href="#item-1">Overview</a>
@@ -302,7 +290,7 @@
               <!-- </nav> -->
             </nav>
           </div>
-          <div class="col-9">
+          <div class="col-12 col-lg-9">
             <div
               data-bs-spy="scroll"
               data-bs-target="#navbar-example3"
@@ -354,25 +342,25 @@
                 </div>
                 <div class="col-12">
                   <div class="row mt-3">
-                    <div class="col-3">
+                    <div class="col-12 col-md-3">
                       <h2 class="fw-bold h6">
                         <span class="h4">2</span> minutes away from Kollur Exit
                         2
                       </h2>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-md-3">
                       <h2 class="fw-bold h6">
                         <span class="h4">9</span> minutes away from Tellapur
                         MMTS
                       </h2>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-md-3">
                       <h2 class="fw-bold h6">
                         <span class="h4">12</span> minutes away from Financial
                         District Exit 1
                       </h2>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-md-3">
                       <h2 class="fw-bold h6">
                         <span class="h4">15</span> minutes away from Lingampally
                       </h2>
@@ -462,7 +450,7 @@
                         class="fs-6 list-group-item d-flex align-items-center justify-content-between"
                       >
                         <span>Citizen, Nallagandla : </span>
-                        <span>I0Kms 15Mins</span>
+                        <span>10 Kms 15 Mins</span>
                       </li>
                       <li
                         class="fs-6 list-group-item d-flex align-items-center justify-content-between"
@@ -562,7 +550,7 @@
               </div>
               <h4 id="item-3">Project Highlights</h4>
               <div class="row" data-masonry='{"percentPosition": true }'>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-building"></i>
@@ -577,7 +565,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-mountain-city"></i>
@@ -591,7 +579,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-medal"></i>
@@ -606,7 +594,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-table-tennis-paddle-ball"></i>
@@ -621,7 +609,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-recycle"></i>
@@ -637,7 +625,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-house-lock"></i>
@@ -656,7 +644,7 @@
 
               <h4 id="item-4">Specifications</h4>
               <div class="row" data-masonry='{"percentPosition": true }'>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-building-circle-check"></i>
@@ -671,7 +659,7 @@
                   </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-building-shield"></i>
@@ -685,7 +673,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-door-open"></i>
@@ -706,7 +694,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-restroom"></i>
@@ -722,7 +710,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-kitchen-set"></i>
@@ -741,7 +729,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-paint-roller"></i>
@@ -762,7 +750,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-person-falling"></i>
@@ -777,7 +765,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-house-circle-check"></i>
@@ -823,7 +811,7 @@
                     veritatis!
                   </div>
                 </div> -->
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-elevator"></i>
@@ -836,7 +824,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-bolt"></i>
@@ -853,7 +841,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-car-battery"></i>
@@ -867,7 +855,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="d-flex align-items-start justify-content-center">
                     <div class="mt-2 icon-box">
                       <i class="fa-solid fa-shield-halved"></i>
@@ -886,7 +874,7 @@
 
               <h4 id="item-5">Layout</h4>
               <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <img
                     id="myImg1"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710745410/invitation-estate/PLAN_result_ibno5t.webp"
@@ -895,7 +883,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">1. Entrance Plaza</li>
                     <li class="list-group-item">
@@ -933,7 +921,7 @@
                 <div class="col-12">
                   <h2 class="fw-bold h5">2 BHK - 1379 SQ.FT</h2>
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                       <h3 class="fw-bold h6">East Facing</h3>
                       <img
                         id="myImg"
@@ -943,7 +931,7 @@
                         data-target="myModal1"
                       />
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                       <h3 class="fw-bold h6">West Facing</h3>
                       <img
                         id="myImg"
@@ -955,7 +943,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <h2 class="fw-bold h5">2.5 BHK - 1538 SQ.FT</h2>
                   <img
                     id="myImg"
@@ -968,7 +956,7 @@
                 <div class="col-12">
                   <h2 class="fw-bold h5">3 BHK - 1842 SQ.FT</h2>
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                       <h3 class="fw-bold h6">East Facing</h3>
                       <img
                         id="myImg"
@@ -978,7 +966,7 @@
                         data-target="myModal1"
                       />
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                       <h3 class="fw-bold h6">West Facing</h3>
                       <img
                         id="myImg"
@@ -993,7 +981,7 @@
               </div>
               <h4 id="item-7">Club Facilities</h4>
               <div class="row g-3" data-masonry='{"percentPosition": true }'>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <h3 class="fw-bold h6">Indoor Sports Zone</h3>
                   <img
                     id="myImg"
@@ -1003,7 +991,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <h3 class="fw-bold h6">Swiming Pool</h3>
                   <img
                     id="myImg"
@@ -1025,9 +1013,9 @@
                 </div>
               </div>
 
-              <h4 id="item-8">Gallery</h4>
+              <h4 id="item-8" >Gallery</h4>
               <div class="row g-3" data-masonry='{"percentPosition": true }'>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710749030/invitation-estate/flats/2bhk-east_result_k4hlv2.webp"
@@ -1036,7 +1024,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710749032/invitation-estate/flats/2bhk-west_result_ns5ime.webp"
@@ -1045,7 +1033,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710749033/invitation-estate/flats/3bhk-east_result_ja1azn.webp"
@@ -1054,7 +1042,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710749029/invitation-estate/flats/3bhk-west_result_xjxeh3.webp"
@@ -1063,7 +1051,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710317723/invitation-estate/ttmfwbiexfhzrl7t8emy_jcjp4k.jpg"
@@ -1072,7 +1060,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710317721/invitation-estate/r3vco16crabcbmq9udcn_utsq0q.jpg"
@@ -1081,7 +1069,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710317709/invitation-estate/le4ltzqnislhp0rp4s0y_xck5qm.jpg"
@@ -1090,7 +1078,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710317704/invitation-estate/jaayfqvny7owsqumtny0_ooigo5.jpg"
@@ -1099,7 +1087,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710317699/invitation-estate/ggkkogflhpkag8i5zspr_ij2amg.jpg"
@@ -1108,7 +1096,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710317691/invitation-estate/cxshgzdcyswhlkhb60o9_iiurer.jpg"
@@ -1117,7 +1105,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710317701/invitation-estate/hero-banner_n3et8c.jpg"
@@ -1126,7 +1114,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710339430/invitation-estate/Bird_View-021_result_lwxdw4.webp"
@@ -1138,7 +1126,7 @@
               </div>
               <h4 id="item-9">Work Progress</h4>
               <div class="row g-3" data-masonry='{"percentPosition": true }'>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710956870/invitation-estate/progress/progress2_result_kfrfhb.webp"
@@ -1147,7 +1135,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710956870/invitation-estate/progress/progress1_result_qcft8v.webp"
@@ -1156,7 +1144,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710956870/invitation-estate/progress/progress7_result_njv15g.webp"
@@ -1165,7 +1153,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710956848/invitation-estate/progress/progress6_result_vvswi8.webp"
@@ -1174,7 +1162,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710956848/invitation-estate/progress/progress5_result_pc0jtt.webp"
@@ -1183,7 +1171,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710956807/invitation-estate/progress/progress4_result_ehwkcf.webp"
@@ -1192,7 +1180,7 @@
                     data-target="myModal1"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                   <img
                     id="myImg"
                     src="https://res.cloudinary.com/dvfoyj8cx/image/upload/v1710956807/invitation-estate/progress/progress3_result_pevewd.webp"
